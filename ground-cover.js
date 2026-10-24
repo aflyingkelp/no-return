@@ -1,0 +1,22 @@
+'use strict';
+// Camera-centred instancing fills the nearby terrain without storing millions
+// of grass vertices or placing blades on roads and inside houses.
+window.IslandGroundCover=class {
+ constructor(renderer,fragment){this.renderer=renderer;let gl=renderer.gl,W=window.ISLAND_WORLD,width=W.cols,height=W.rows,data=new Float32Array(width*height*4);
+  for(let z=0;z<height;z++)for(let x=0;x<width;x++){let h=W.ground((x+.5)*2,(z+.5)*2),i=(z*width+x)*4;data[i]=h;data[i+1]=h>1.8&&!W.nav[z*width+x]?1:0;}
+  const clear=(x,z,r)=>{for(let dz=-r;dz<=r;dz++)for(let dx=-r;dx<=r;dx++){let a=Math.floor(x/2)+dx,b=Math.floor(z/2)+dz;if(a>=0&&b>=0&&a<width&&b<height)data[(b*width+a)*4+1]=0;}};
+  for(let b of W.buildings)for(let z=b.bounds.minZ-2;z<b.bounds.maxZ+2;z+=1.8)for(let x=b.bounds.minX-2;x<b.bounds.maxX+2;x+=1.8)clear(x,z,1);
+  for(let road of W.roads)for(let j=1;j<road.points.length;j++){let a=road.points[j-1],b=road.points[j],d=Math.hypot(b[0]-a[0],b[1]-a[1]),radius=road.tags.highway==='footway'?1:2;for(let t=0;t<=d;t++)clear(a[0]+(b[0]-a[0])*t/Math.max(d,.01),a[1]+(b[1]-a[1])*t/Math.max(d,.01),radius);}
+  this.mask=data;this.width=width;this.map=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,this.map);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA32F,width,height,0,gl.RGBA,gl.FLOAT,data);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+  this.program=renderer.programFor(`#version 300 es
+precision highp float;precision highp int;uniform mat4 uVP,uLightVP;uniform vec3 uEye;uniform float uTime;uniform sampler2D uGround;out vec3 vWorld,vNormal,vColor;out vec4 vShadow;out float vMaterial;
+${window.ISLAND_WIND_GLSL}
+float rnd(float x){return fract(sin(x*78.233)*43758.5453);}
+float elevation(vec2 p){vec2 q=p/2.-.5,f=fract(q);ivec2 i=ivec2(floor(q));return mix(mix(texelFetch(uGround,i,0).r,texelFetch(uGround,i+ivec2(1,0),0).r,f.x),mix(texelFetch(uGround,i+ivec2(0,1),0).r,texelFetch(uGround,i+ivec2(1,1),0).r,f.x),f.y);}
+void main(){int id=(gl_InstanceID*101)%22500;vec2 cell=vec2(id%150,id/150)-75.;vec2 root=floor(uEye.xz/.6)*.6+cell*.6;root+=vec2(rnd(root.x*3.+root.y),rnd(root.y*7.+root.x))*.3;ivec2 coord=ivec2(root/2.);vec4 land=texelFetch(uGround,coord,0);float distance=length(root-uEye.xz),fade=1.-smoothstep(30.,44.,distance);if(land.g<.5||fade<.01){gl_Position=vec4(2,2,2,1);vWorld=vec3(0);vNormal=vec3(0,1,0);vColor=vec3(0);vShadow=vec4(0);vMaterial=8.;return;}int blade=gl_VertexID/3,corner=gl_VertexID%3;float seed=root.x*31.+root.y*53.+float(blade)*7.3,a=rnd(seed)*6.283185,h=(.10+rnd(seed+3.)*.25)*fade;vec2 side=vec2(cos(a),sin(a))*.018,offset=vec2(rnd(seed+1.)-.5,rnd(seed+2.)-.5)*.17;vec3 p=vec3(root.x+offset.x,elevation(root),root.y+offset.y);if(corner==2)p+=vec3(cos(a)*h*.22,h,sin(a)*h*.22);else p.xz+=side*(corner==0?-1.:1.);p=windPosition(p,corner==2?8.4:8.,uTime);vWorld=p;vNormal=normalize(vec3(sin(a),.3,-cos(a)));vColor=mix(vec3(.12,.21,.055),vec3(.27,.34,.09),rnd(seed+4.));vMaterial=8.;vShadow=uLightVP*vec4(p,1);gl_Position=uVP*vec4(p,1);}`,fragment);this.vao=gl.createVertexArray();
+ }
+ render(state,vp,lightVP,eye,light,dir){let r=this.renderer,gl=r.gl,p=this.program;gl.useProgram(p);for(let[n,v]of[['uVP',vp],['uLightVP',lightVP]])gl.uniformMatrix4fv(r.uniform(p,n),false,v);for(let[n,v]of[['uEye',eye],['uLight',light],['uDirection',dir]])gl.uniform3fv(gl.getUniformLocation(p,n),v);
+  for(let[n,v]of[['uCandle',state.candle?1:0],['uOn',state.flashlight?1:0],['uDay',state.daylight||state.menu?1:0],['uTime',state.weatherTime??state.time],['uMenu',state.menu?1:0],['uDebug',0],['uHighlight',0],['uShadowSize',r.settings.shadow],['uPCF',r.settings.pcf],['uDensity',1],['uTrace',0],['uTexturesReady',0]])gl.uniform1f(gl.getUniformLocation(p,n),v);
+  gl.uniform2f(gl.getUniformLocation(p,'uResolution'),r.canvas.width,r.canvas.height);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,r.shadowTexture);gl.uniform1i(gl.getUniformLocation(p,'uShadow'),0);gl.activeTexture(gl.TEXTURE0+6);gl.bindTexture(gl.TEXTURE_2D,this.map);gl.uniform1i(gl.getUniformLocation(p,'uGround'),6);r.materials.bind(gl,p);gl.bindVertexArray(this.vao);gl.drawArraysInstanced(gl.TRIANGLES,0,15,Math.floor(22500*r.settings.foliage));r.drawTriangles+=5*Math.floor(22500*r.settings.foliage);r.drawCalls++;
+ }
+};

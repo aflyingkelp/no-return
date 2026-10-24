@@ -1,0 +1,1 @@
+{"variants":[{"high":{"vertices":"boulder-0.bin","indices":"boulder-0-indices.bin","count":198366},"low":{"vertices":"boulder-0-lod.bin","indices":"boulder-0-lod-indices.bin","count":12519},"bounds":{"min":[-0.636067807674408,0,-0.9151671230792999],"max":[0.636067807674408,1.0038301944732666,0.9151671230792999]}}]}

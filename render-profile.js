@@ -1,0 +1,8 @@
+'use strict';
+// Non-blocking GPU timer queries. CPU harness results are reported separately.
+(()=>{let render=window.Island3D.prototype.render;
+window.Island3D.prototype.render=function(state){if(this.contextLost||this.disposed||this.gl.isContextLost())return;let gl=this.gl;this.profile??={cpuMs:0,gpuMs:null,samples:0,frames:0};let stats=this.profile;stats.frames++;if(!this.timerInitialized){this.timerInitialized=true;this.timerExtension=gl.getExtension('EXT_disjoint_timer_query_webgl2');}
+ if(this.pendingQuery&&gl.getQueryParameter(this.pendingQuery,gl.QUERY_RESULT_AVAILABLE)){if(!gl.getParameter(this.timerExtension.GPU_DISJOINT_EXT)){let ms=gl.getQueryParameter(this.pendingQuery,gl.QUERY_RESULT)/1000000;stats.gpuMs=stats.gpuMs==null?ms:stats.gpuMs*.7+ms*.3;stats.samples++;}gl.deleteQuery(this.pendingQuery);this.pendingQuery=null;}
+ let query=null;if(this.timerExtension&&!this.pendingQuery&&stats.frames%20===0){query=gl.createQuery();gl.beginQuery(this.timerExtension.TIME_ELAPSED_EXT,query);}let start=performance.now();render.call(this,state);let ms=performance.now()-start;stats.cpuMs=stats.cpuMs?stats.cpuMs*.9+ms*.1:ms;if(query){gl.endQuery(this.timerExtension.TIME_ELAPSED_EXT);this.pendingQuery=query;}
+ if(stats.frames%20===0){let out=document.querySelector('#performanceReadout');if(out){out.textContent='CPU '+stats.cpuMs.toFixed(1)+' ms'+(stats.gpuMs==null?'':' · GPU '+stats.gpuMs.toFixed(1)+' ms')+' · '+Math.round(this.drawTriangles/1000)+'k triangles';}if(this.timerExtension&&stats.gpuMs>25&&this.dynamicScale!==.8){this.dynamicScale=.8;this.resize();}else if(stats.gpuMs!=null&&stats.gpuMs<13&&this.dynamicScale===.8){this.dynamicScale=1;this.resize();}}
+};})();

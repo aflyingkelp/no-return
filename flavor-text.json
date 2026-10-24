@@ -1,0 +1,4186 @@
+{
+  "format": "no-return-flavor-v1",
+  "instructions": "Edit text values or the Markdown paragraphs. Keep entry IDs and {{dynamic_N}} placeholders unchanged. Send the edited file back; sources identify where each line belongs. Includes narrative, documents, item descriptions, interaction responses, prompts, intro captions and interface/system wording. Duplicate text is listed once.",
+  "entries": [
+    {
+      "id": "document.arrival.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.arrival.title",
+      "text": "A note in your pocket"
+    },
+    {
+      "id": "document.arrival.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.arrival.author",
+      "text": "YOUR HANDWRITING"
+    },
+    {
+      "id": "document.arrival.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.arrival.location",
+      "text": "Starting equipment"
+    },
+    {
+      "id": "document.arrival.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.arrival.text[0]",
+      "text": "Find a fuse in the west guest villa. Restore the generator beside the helipad. Recover the boat key from the powered lockbox in the main compound. Find fuel in the southeast boathouse. Return to the north dock."
+    },
+    {
+      "id": "document.arrival.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.arrival.text[1]",
+      "text": "I wrote this before I stepped off the boat. I do not remember writing the last line: “His..dih...so...bi-”"
+    },
+    {
+      "id": "document.arrival.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.arrival.text[2]",
+      "text": "Y / TAB: backpack. J: collected files. The inventory and document reader pause the game. Keys and tools work only within reach of the object they fit."
+    },
+    {
+      "id": "document.dock-manifest.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.dock-manifest.title",
+      "text": "The last departure"
+    },
+    {
+      "id": "document.dock-manifest.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.dock-manifest.author",
+      "text": "DOCK MANIFEST / 00:43"
+    },
+    {
+      "id": "document.dock-manifest.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.dock-manifest.location",
+      "text": "North dock"
+    },
+    {
+      "id": "document.dock-manifest.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.dock-manifest.text[0]",
+      "text": "Outbound: one service skiff. Fuel: insufficient. Ignition key: electronic safe, main villa. Spare generator fuse: west guest villa."
+    },
+    {
+      "id": "document.dock-manifest.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.dock-manifest.text[1]",
+      "text": "Someone has crossed out every passenger name. The pencilled total beneath the list has been changed from THREE to FOUR, then to THREE again. It reminds you of you're genocides."
+    },
+    {
+      "id": "document.dock-manifest.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.dock-manifest.text[2]",
+      "text": "A note on the reverse: “Do not wait for the fourth person. We watched him get on. WHAT DID I TELL YOU.”"
+    },
+    {
+      "id": "document.battery-slip.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.battery-slip.title",
+      "text": "Keep one cell dry"
+    },
+    {
+      "id": "document.battery-slip.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.battery-slip.author",
+      "text": "MAINTENANCE INSTRUCTIONS"
+    },
+    {
+      "id": "document.battery-slip.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.battery-slip.location",
+      "text": "West villa drawer"
+    },
+    {
+      "id": "document.battery-slip.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.battery-slip.text[0]",
+      "text": "The flashlight drains while switched on. Darkness stops the drain. A spare battery replaces the entire cell; do not waste it on a nearly full charge."
+    },
+    {
+      "id": "document.battery-slip.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.battery-slip.text[1]",
+      "text": "Candles are a backup, not concealment. A lit candle still gives away a person standing in an open lane. Matches can relight a candle, but they cannot restore burned wax."
+    },
+    {
+      "id": "document.battery-slip.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.battery-slip.text[2]",
+      "text": "The final sentence is pressed so hard into the paper that it has torn: “I found six used batteries inside the wall. Ughh... So tasty”"
+    },
+    {
+      "id": "document.first-aid.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.first-aid.title",
+      "text": "Glass in the carpet"
+    },
+    {
+      "id": "document.first-aid.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.first-aid.author",
+      "text": "FIRST-AID CARD"
+    },
+    {
+      "id": "document.first-aid.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.first-aid.location",
+      "text": "Guest house desk"
+    },
+    {
+      "id": "document.first-aid.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.first-aid.text[0]",
+      "text": "The marked rooms contain broken glass. Walk around it or crouch slowly across it. Moving over the shards upright causes cuts."
+    },
+    {
+      "id": "document.first-aid.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.first-aid.text[1]",
+      "text": "Bleeding slowly lowers condition and reduces your sprint. A clean bandage stops it and restores a little condition. A first-aid kit restores much more, because, well, it's a first-aid kit."
+    },
+    {
+      "id": "document.first-aid.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.first-aid.text[2]",
+      "text": "No dressing can help once a hunter has hold of your dih. Don't let them in the first place."
+    },
+    {
+      "id": "document.crate-note.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.crate-note.title",
+      "text": "The boards stay on"
+    },
+    {
+      "id": "document.crate-note.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.crate-note.author",
+      "text": "STORAGE ORDER"
+    },
+    {
+      "id": "document.crate-note.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.crate-note.location",
+      "text": "West villa"
+    },
+    {
+      "id": "document.crate-note.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.crate-note.text[0]",
+      "text": "The upstairs supply crate is nailed shut. Use the crowbar from the ground-floor desk. Inside: rope, a cassette and a letter that was never delivered(they slow af)."
+    },
+    {
+      "id": "document.crate-note.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.crate-note.text[1]",
+      "text": "Do not try to move the crate. The last worker who lifted it said something beneath the floor lifted with him."
+    },
+    {
+      "id": "document.crate-note.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.crate-note.text[2]",
+      "text": "We have stopped knocking on the boards to check whether they are empty. There is always an answer now."
+    },
+    {
+      "id": "document.cabinet-memo.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.cabinet-memo.title",
+      "text": "Staff cabinet"
+    },
+    {
+      "id": "document.cabinet-memo.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.cabinet-memo.author",
+      "text": "PRIVATE / MEDICINE INVENTORY"
+    },
+    {
+      "id": "document.cabinet-memo.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.cabinet-memo.location",
+      "text": "Main villa"
+    },
+    {
+      "id": "document.cabinet-memo.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.cabinet-memo.text[0]",
+      "text": "The medicine cabinet is upstairs in the main villa. Its brass key was left on the desk upstairs in the west-lane house, beyond the first villa. A lockpick will also work, once."
+    },
+    {
+      "id": "document.cabinet-memo.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.cabinet-memo.text[1]",
+      "text": "Contents: one first-aid kit, a dry candle, and the night attendant’s report."
+    },
+    {
+      "id": "document.cabinet-memo.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.cabinet-memo.text[2]",
+      "text": "Every bottle in this cabinet has its label facing the wall. No one on the staff admits turning them around."
+    },
+    {
+      "id": "document.chain-order.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.chain-order.title",
+      "text": "Cut the chain"
+    },
+    {
+      "id": "document.chain-order.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.chain-order.author",
+      "text": "BOATHOUSE SERVICE NOTE"
+    },
+    {
+      "id": "document.chain-order.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.chain-order.location",
+      "text": "Utility yard"
+    },
+    {
+      "id": "document.chain-order.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.chain-order.text[0]",
+      "text": "The boathouse supply case was chained shut after the last inspection. Bolt cutters are beside the crates in the generator shed."
+    },
+    {
+      "id": "document.chain-order.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.chain-order.text[1]",
+      "text": "The fuel can is outside the case. Do not waste time trying to cut its handle off. The case contains spare batteries and dressings for the return journey."
+    },
+    {
+      "id": "document.chain-order.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.chain-order.text[2]",
+      "text": "If the chain is warm, step back. We have no explanation for this."
+    },
+    {
+      "id": "document.rope-warning.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.rope-warning.title",
+      "text": "Four more seconds"
+    },
+    {
+      "id": "document.rope-warning.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.rope-warning.author",
+      "text": "JONAS / TORN PAGE"
+    },
+    {
+      "id": "document.rope-warning.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.rope-warning.location",
+      "text": "Supply crate"
+    },
+    {
+      "id": "document.rope-warning.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.rope-warning.text[0]",
+      "text": "I tied the handle shut from inside. It took longer to open. Four seconds, maybe. Long enough to count the breathing on the other side."
+    },
+    {
+      "id": "document.rope-warning.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.rope-warning.text[1]",
+      "text": "You can only brace a wardrobe while hiding in it. You need a fresh rope each time; leaving loosens the knot. Do not mistake a delay for an escape."
+    },
+    {
+      "id": "document.rope-warning.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.rope-warning.text[2]",
+      "text": "When the rope finally snapped, I heard someone inside the wardrobe behind me begin to laugh. There was no room behind me."
+    },
+    {
+      "id": "document.listener-notes.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.listener-notes.title",
+      "text": "What the listeners follow"
+    },
+    {
+      "id": "document.listener-notes.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.listener-notes.author",
+      "text": "INEZ / FIELD NOTES"
+    },
+    {
+      "id": "document.listener-notes.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.listener-notes.location",
+      "text": "East guest house"
+    },
+    {
+      "id": "document.listener-notes.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.listener-notes.text[0]",
+      "text": "They follow the place a sound came from. Not the person who made it, unless they can still hear you or see your light."
+    },
+    {
+      "id": "document.listener-notes.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.listener-notes.text[1]",
+      "text": "Throw an empty bottle away from your escape route. The pocket recorder can play a short loop of footsteps as a decoy. It does not work while you hold it; place it and leave."
+    },
+    {
+      "id": "document.listener-notes.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.listener-notes.text[2]",
+      "text": "Do not follow a sound simply because it resembles your own footsteps. Especially if the ground is dry and the footsteps sound wet."
+    },
+    {
+      "id": "document.attendant-report.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.attendant-report.title",
+      "text": "A fifth set of keys"
+    },
+    {
+      "id": "document.attendant-report.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.attendant-report.author",
+      "text": "NIGHT ATTENDANT / UNSENT"
+    },
+    {
+      "id": "document.attendant-report.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.attendant-report.location",
+      "text": "Medicine cabinet"
+    },
+    {
+      "id": "document.attendant-report.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.attendant-report.text[0]",
+      "text": "There are four hooks on the key board. Last night there were five keys. Tonight there are five hooks and no keys at all."
+    },
+    {
+      "id": "document.attendant-report.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.attendant-report.text[1]",
+      "text": "I opened every room on the inventory. The room numbered ZERO is not on any floor plan. A woman inside asked whether the boat had already left."
+    },
+    {
+      "id": "document.attendant-report.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.attendant-report.text[2]",
+      "text": "I told her there had never been a room zero. She answered from the room behind me."
+    },
+    {
+      "id": "document.unposted-letter.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.unposted-letter.title",
+      "text": "To whoever finds the bag"
+    },
+    {
+      "id": "document.unposted-letter.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.unposted-letter.author",
+      "text": "MARA / UNPOSTED LETTER"
+    },
+    {
+      "id": "document.unposted-letter.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.unposted-letter.location",
+      "text": "Guest house bedroom"
+    },
+    {
+      "id": "document.unposted-letter.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.unposted-letter.text[0]",
+      "text": "We made rules because rules made it feel possible to leave. Never split up. Never answer the knocking. Never let the watcher see which wardrobe you choose."
+    },
+    {
+      "id": "document.unposted-letter.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.unposted-letter.text[1]",
+      "text": "I broke the first rule to find Jonas. He broke the second because the knocking used my voice. I do not know who broke the third."
+    },
+    {
+      "id": "document.unposted-letter.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.unposted-letter.text[2]",
+      "text": "If you find our notes, take them with you. A place is harder to forget when someone else knows its name. We were here. We were real."
+    },
+    {
+      "id": "document.pavilion-record.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.pavilion-record.title",
+      "text": "The missing hour"
+    },
+    {
+      "id": "document.pavilion-record.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.pavilion-record.author",
+      "text": "FICTIONAL ARCHIVE / PAVILION"
+    },
+    {
+      "id": "document.pavilion-record.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.pavilion-record.location",
+      "text": "Hilltop pavilion"
+    },
+    {
+      "id": "document.pavilion-record.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.pavilion-record.text[0]",
+      "text": "All the clocks in the recovered photographs show 01:17. The lighting changes. The tide changes. The people in the photographs change places. The clocks do not."
+    },
+    {
+      "id": "document.pavilion-record.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.pavilion-record.text[1]",
+      "text": "At 01:18 the radio recorded forty-three minutes of silence. Under the silence is the sound of someone turning pages. NIGGANIGGANIGGANIGGANIGAGANIGNAIGNAGIANAINGAIGNA"
+    },
+    {
+      "id": "document.pavilion-record.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.pavilion-record.text[2]",
+      "text": "The sealed records are optional evidence. You do not need them to start the boat. You may still want them when you reach the other shore."
+    },
+    {
+      "id": "document.tape-transcript.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.tape-transcript.title",
+      "text": "Cassette 04 — The crossing"
+    },
+    {
+      "id": "document.tape-transcript.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.tape-transcript.author",
+      "text": "INEZ / RECOVERED AUDIO"
+    },
+    {
+      "id": "document.tape-transcript.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.tape-transcript.location",
+      "text": "Pocket recorder"
+    },
+    {
+      "id": "document.tape-transcript.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.tape-transcript.text[0]",
+      "text": "[00:00] Wind. A boat engine turns twice and fails."
+    },
+    {
+      "id": "document.tape-transcript.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.tape-transcript.text[1]",
+      "text": "INEZ: “Mara, count us again.”\nMARA: “Three.”\nJONAS: “Then why are there four shadows on the dock?”"
+    },
+    {
+      "id": "document.tape-transcript.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.tape-transcript.text[2]",
+      "text": "[00:19] Footsteps run away from the microphone. A fourth set of footsteps continues toward it."
+    },
+    {
+      "id": "document.tape-transcript.paragraph-4",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.tape-transcript.text[3]",
+      "text": "INEZ: “Do not use this tape to call for help. It learned the loop. If you hear the next line before I say it—”"
+    },
+    {
+      "id": "document.tape-transcript.paragraph-5",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.tape-transcript.text[4]",
+      "text": "[01:17] A voice very close to the microphone: “Turn it off.”\n[The tape continues for twelve minutes. Nothing else is recorded.]"
+    },
+    {
+      "id": "document.blood-warning.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.blood-warning.title",
+      "text": "BEHIND YOU"
+    },
+    {
+      "id": "document.blood-warning.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.blood-warning.author",
+      "text": "BLOODSTAINED PAPER"
+    },
+    {
+      "id": "document.blood-warning.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.blood-warning.location",
+      "text": "Villa wall"
+    },
+    {
+      "id": "document.blood-warning.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.blood-warning.text[0]",
+      "text": "There are fingerprints in the writing. Underneath, in much smaller letters: “It learns where you hide. Never let it watch you enter. EPSTEIN FUH NGAS RAHHHHHHHHHHHHHHHHHHHHHHHHHHHHH”"
+    },
+    {
+      "id": "document.blood-warning.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.blood-warning.text[1]",
+      "text": "The paper is warm. The wall behind it is not."
+    },
+    {
+      "id": "document.sealed-records.title",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.sealed-records.title",
+      "text": "Recovered sealed records"
+    },
+    {
+      "id": "document.sealed-records.author",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.sealed-records.author",
+      "text": "FICTIONAL EVIDENCE / WATER DAMAGE"
+    },
+    {
+      "id": "document.sealed-records.location",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.sealed-records.location",
+      "text": "Pavilion archive"
+    },
+    {
+      "id": "document.sealed-records.paragraph-1",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.sealed-records.text[0]",
+      "text": "A bundle of fictional shipping records, floor plans and photographs. Most names have washed away."
+    },
+    {
+      "id": "document.sealed-records.paragraph-2",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.sealed-records.text[1]",
+      "text": "The last photograph shows the north dock from the water. A figure in the foreground is holding this same bundle. On the reverse is tomorrow’s date."
+    },
+    {
+      "id": "document.sealed-records.paragraph-3",
+      "section": "Documents",
+      "source": "dist/survival.js / documents.sealed-records.text[2]",
+      "text": "Take the records to the boat to carry the evidence off the island."
+    },
+    {
+      "id": "journal-0.title",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "Mara · first landing"
+    },
+    {
+      "id": "journal-0.body",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "We counted six houses from the shore. There are more than six now. Jonas says the map is old. The houses behind us were not there when we arrived."
+    },
+    {
+      "id": "journal-1.title",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "Jonas · upstairs"
+    },
+    {
+      "id": "journal-1.body",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "The footsteps climbed the stairs after me. I hid in the wardrobe. They crossed the room, stopped outside it, then continued above my head. This house only has two floors."
+    },
+    {
+      "id": "journal-2.title",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "Inez · recorder transcript"
+    },
+    {
+      "id": "journal-2.body",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "I stopped walking. The steps behind me stopped one beat later. I tried again. Same delay. Then something started walking in front of me."
+    },
+    {
+      "id": "journal-3.title",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "Mara · the listening rooms"
+    },
+    {
+      "id": "journal-3.body",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "The two figures by the empty houses turn toward every sound. Running brings them faster. Crouching buys time. Even when the light is out, they remember the last noise."
+    },
+    {
+      "id": "journal-4.title",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "Jonas · the window"
+    },
+    {
+      "id": "journal-4.body",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "The man outside the window did not move for an hour. When I looked away he changed windows. When I watched him directly, he stepped back into the trees."
+    },
+    {
+      "id": "journal-5.title",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "Inez · batteries"
+    },
+    {
+      "id": "journal-5.body",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "I left my backpack beside the bed and followed the knocking. There was no door at the end of that corridor. I can still hear my backpack radio from inside the wall."
+    },
+    {
+      "id": "journal-6.title",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "Mara · not a rescue"
+    },
+    {
+      "id": "journal-6.body",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "Someone called from the other house. It sounded like Jonas, but his recorder was in my hand. The figure under the porch never spoke again."
+    },
+    {
+      "id": "journal-7.title",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "Jonas · last page"
+    },
+    {
+      "id": "journal-7.body",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "I thought the watcher wanted me to see him. Now I think he was counting how many times I turned around. The knocks, the footsteps, the face at the window: all the same patient thing."
+    },
+    {
+      "id": "journal-8.title",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "Inez · dawn that never came"
+    },
+    {
+      "id": "journal-8.body",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "Mara went quiet in the upstairs room. We covered her and left the water beside the bed. I promised to come back with the boat key. I am still writing that promise."
+    },
+    {
+      "id": "journal-9.title",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "Unsent message"
+    },
+    {
+      "id": "journal-9.body",
+      "section": "Explorer journals",
+      "source": "dist/horror.js / stories",
+      "text": "If you find our things, do not follow the running footsteps. Find the fuse. Restore the generator. Take the key and fuel. Leave before the watching becomes something else."
+    },
+    {
+      "id": "item.flashlight.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.flashlight.name",
+      "text": "Flashlight"
+    },
+    {
+      "id": "item.flashlight.category",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.flashlight.category",
+      "text": "equipment"
+    },
+    {
+      "id": "item.flashlight.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.flashlight.tag",
+      "text": "LIGHT SOURCE"
+    },
+    {
+      "id": "item.flashlight.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.flashlight.description",
+      "text": "Your narrow beam reaches across open ground. Hunters can see it. Check the charge before leaving a safe room."
+    },
+    {
+      "id": "item.flashlight.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.flashlight.action",
+      "text": "Toggle flashlight"
+    },
+    {
+      "id": "item.map.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.map.name",
+      "text": "Island field map"
+    },
+    {
+      "id": "item.map.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.map.tag",
+      "text": "NAVIGATION"
+    },
+    {
+      "id": "item.map.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.map.description",
+      "text": "A marked plan of the dock, villas and utility yard. The numbered route shows the supplies needed to launch the boat."
+    },
+    {
+      "id": "item.map.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.map.action",
+      "text": "Open map"
+    },
+    {
+      "id": "item.knife.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.knife.name",
+      "text": "Pocket knife"
+    },
+    {
+      "id": "item.knife.category",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.knife.category",
+      "text": "tools"
+    },
+    {
+      "id": "item.knife.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.knife.tag",
+      "text": "REUSABLE TOOL"
+    },
+    {
+      "id": "item.knife.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.knife.description",
+      "text": "A small folding blade. Cut clean fabric from an open wardrobe to make two emergency bandages. Each wardrobe has only one usable piece."
+    },
+    {
+      "id": "item.knife.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.knife.action",
+      "text": "Cut cloth nearby"
+    },
+    {
+      "id": "item.battery.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.battery.name",
+      "text": "Spare battery"
+    },
+    {
+      "id": "item.battery.category",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.battery.category",
+      "text": "supplies"
+    },
+    {
+      "id": "item.battery.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.battery.tag",
+      "text": "CONSUMABLE"
+    },
+    {
+      "id": "item.battery.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.battery.description",
+      "text": "A sealed replacement cell. Restores the flashlight to full charge. Replace it before the beam dies in the wrong room."
+    },
+    {
+      "id": "item.battery.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.battery.action",
+      "text": "Replace battery"
+    },
+    {
+      "id": "item.bandage.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.bandage.name",
+      "text": "Clean bandage"
+    },
+    {
+      "id": "item.bandage.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.bandage.tag",
+      "text": "FIRST AID"
+    },
+    {
+      "id": "item.bandage.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.bandage.description",
+      "text": "Stops bleeding and restores 15 condition. Broken glass cuts moving feet; crouch to cross it carefully. A bandage cannot save you from a hunter’s grip."
+    },
+    {
+      "id": "item.bandage.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.bandage.action",
+      "text": "Apply bandage"
+    },
+    {
+      "id": "item.medkit.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.medkit.name",
+      "text": "First-aid kit"
+    },
+    {
+      "id": "item.medkit.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.medkit.description",
+      "text": "Dressings and antiseptic. Stops bleeding and restores 55 condition. Save it for a serious injury."
+    },
+    {
+      "id": "item.medkit.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.medkit.action",
+      "text": "Use first-aid kit"
+    },
+    {
+      "id": "item.crowbar.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.crowbar.name",
+      "text": "Rusty crowbar"
+    },
+    {
+      "id": "item.crowbar.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.crowbar.description",
+      "text": "Levers the nailed boards off a supply crate. The noise carries through nearby rooms. Look for the boarded crate in the west villa upstairs."
+    },
+    {
+      "id": "item.crowbar.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.crowbar.action",
+      "text": "Pry nearby crate"
+    },
+    {
+      "id": "item.boltcutters.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.boltcutters.name",
+      "text": "Bolt cutters"
+    },
+    {
+      "id": "item.boltcutters.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.boltcutters.description",
+      "text": "Cuts the chain around the boathouse supply case. Too heavy to use quietly. The blades are marked with dried red dust."
+    },
+    {
+      "id": "item.boltcutters.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.boltcutters.action",
+      "text": "Cut nearby chain"
+    },
+    {
+      "id": "item.lockpick.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.lockpick.name",
+      "text": "Lockpick"
+    },
+    {
+      "id": "item.lockpick.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.lockpick.tag",
+      "text": "SINGLE USE"
+    },
+    {
+      "id": "item.lockpick.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.lockpick.description",
+      "text": "Opens a small cabinet lock when the brass key is missing. The cheap tension wrench bends after one successful use."
+    },
+    {
+      "id": "item.lockpick.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.lockpick.action",
+      "text": "Pick nearby cabinet"
+    },
+    {
+      "id": "item.brass-key.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.brass-key.name",
+      "text": "Brass cabinet key"
+    },
+    {
+      "id": "item.brass-key.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.brass-key.tag",
+      "text": "REUSABLE KEY"
+    },
+    {
+      "id": "item.brass-key.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.brass-key.description",
+      "text": "A small key stamped STAFF. It fits the medicine cabinet in the main villa upstairs."
+    },
+    {
+      "id": "item.brass-key.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.brass-key.action",
+      "text": "Unlock nearby cabinet"
+    },
+    {
+      "id": "item.rope.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.rope.name",
+      "text": "Coil of rope"
+    },
+    {
+      "id": "item.rope.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.rope.tag",
+      "text": "SURVIVAL TOOL"
+    },
+    {
+      "id": "item.rope.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.rope.description",
+      "text": "Tie the wardrobe handle from inside. A hunter who watched you enter will take four extra seconds to force it. This buys time; it does not make the wardrobe safe."
+    },
+    {
+      "id": "item.rope.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.rope.action",
+      "text": "Brace hiding place"
+    },
+    {
+      "id": "item.bottle.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.bottle.name",
+      "text": "Empty glass bottle"
+    },
+    {
+      "id": "item.bottle.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.bottle.tag",
+      "text": "DISTRACTION"
+    },
+    {
+      "id": "item.bottle.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.bottle.description",
+      "text": "Throw it in the direction you are looking. It breaks against the floor or the first wall, giving listeners a sound to investigate. Move away before they arrive."
+    },
+    {
+      "id": "item.bottle.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.bottle.action",
+      "text": "Throw bottle"
+    },
+    {
+      "id": "item.recorder.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.recorder.tag",
+      "text": "REPLAY / DECOY"
+    },
+    {
+      "id": "item.recorder.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.recorder.description",
+      "text": "Listen to a collected cassette in Files, or place a looping footstep decoy up to eight metres ahead. It lasts twelve seconds, then needs twenty seconds to reset."
+    },
+    {
+      "id": "item.recorder.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.recorder.action",
+      "text": "Place audio decoy"
+    },
+    {
+      "id": "item.tape.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.tape.name",
+      "text": "Inez’s cassette"
+    },
+    {
+      "id": "item.tape.category",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.tape.category",
+      "text": "evidence"
+    },
+    {
+      "id": "item.tape.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.tape.tag",
+      "text": "RECORDED EVIDENCE"
+    },
+    {
+      "id": "item.tape.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.tape.description",
+      "text": "A recording of the failed crossing. Play it with the pocket recorder to save the full transcript to your document archive."
+    },
+    {
+      "id": "item.tape.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.tape.action",
+      "text": "Play cassette"
+    },
+    {
+      "id": "item.matches.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.matches.name",
+      "text": "Dry matches"
+    },
+    {
+      "id": "item.matches.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.matches.description",
+      "text": "A match lights a candle. Relighting an extinguished candle costs another match. Keep the box dry."
+    },
+    {
+      "id": "item.matches.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.matches.action",
+      "text": "Light a candle"
+    },
+    {
+      "id": "item.candle.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.candle.name",
+      "text": "Wax candle"
+    },
+    {
+      "id": "item.candle.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.candle.tag",
+      "text": "BACKUP LIGHT"
+    },
+    {
+      "id": "item.candle.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.candle.description",
+      "text": "Ninety seconds of dim, warm light within nine metres. Requires a match to light. Hunters can see this light too. F extinguishes it."
+    },
+    {
+      "id": "item.candle.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.candle.action",
+      "text": "Light / extinguish"
+    },
+    {
+      "id": "item.fuse.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.fuse.name",
+      "text": "Generator fuse"
+    },
+    {
+      "id": "item.fuse.category",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.fuse.category",
+      "text": "key items"
+    },
+    {
+      "id": "item.fuse.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.fuse.tag",
+      "text": "ESCAPE ITEM"
+    },
+    {
+      "id": "item.fuse.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.fuse.description",
+      "text": "Fits the generator in the utility yard beside the helipad. Installation consumes the fuse and restores power to the boat-key lockbox."
+    },
+    {
+      "id": "item.fuse.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.fuse.action",
+      "text": "Install at generator"
+    },
+    {
+      "id": "item.key.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.key.name",
+      "text": "Boat key"
+    },
+    {
+      "id": "item.key.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.key.description",
+      "text": "The north-dock boat’s ignition key. You also need fuel before the engine will start."
+    },
+    {
+      "id": "item.key.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.key.action",
+      "text": "Use at escape boat"
+    },
+    {
+      "id": "item.fuel.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.fuel.name",
+      "text": "Fuel can"
+    },
+    {
+      "id": "item.fuel.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.fuel.description",
+      "text": "Enough fuel for the crossing. Carry it back to the boat on the north dock."
+    },
+    {
+      "id": "item.evidence.name",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.evidence.name",
+      "text": "Sealed records"
+    },
+    {
+      "id": "item.evidence.tag",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.evidence.tag",
+      "text": "OPTIONAL EVIDENCE"
+    },
+    {
+      "id": "item.evidence.description",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.evidence.description",
+      "text": "Fictional, water-damaged records recovered from the pavilion. Taking them off the island changes the ending."
+    },
+    {
+      "id": "item.evidence.action",
+      "section": "Equipment and supplies",
+      "source": "dist/survival.js / definitions.evidence.action",
+      "text": "Inspect records"
+    },
+    {
+      "id": "world.fuse.hint",
+      "section": "World labels and prompts",
+      "source": "world item fuse.hint",
+      "text": "E · TAKE GENERATOR FUSE"
+    },
+    {
+      "id": "world.fuse.location",
+      "section": "World labels and prompts",
+      "source": "world item fuse.location",
+      "text": "WEST GUEST VILLA"
+    },
+    {
+      "id": "world.generator.name",
+      "section": "World labels and prompts",
+      "source": "world item generator.name",
+      "text": "Generator"
+    },
+    {
+      "id": "world.generator.hint",
+      "section": "World labels and prompts",
+      "source": "world item generator.hint",
+      "text": "E · REPLACE FUSE / RESTORE POWER"
+    },
+    {
+      "id": "world.generator.location",
+      "section": "World labels and prompts",
+      "source": "world item generator.location",
+      "text": "GENERATOR HOUSE"
+    },
+    {
+      "id": "world.key.hint",
+      "section": "World labels and prompts",
+      "source": "world item key.hint",
+      "text": "E · OPEN SECURITY LOCKBOX"
+    },
+    {
+      "id": "world.key.location",
+      "section": "World labels and prompts",
+      "source": "world item key.location",
+      "text": "MAIN COMPOUND"
+    },
+    {
+      "id": "world.fuel.hint",
+      "section": "World labels and prompts",
+      "source": "world item fuel.hint",
+      "text": "E · TAKE FUEL CAN"
+    },
+    {
+      "id": "world.fuel.location",
+      "section": "World labels and prompts",
+      "source": "world item fuel.location",
+      "text": "SOUTHEAST BOATHOUSE"
+    },
+    {
+      "id": "world.boat.name",
+      "section": "World labels and prompts",
+      "source": "world item boat.name",
+      "text": "Escape boat"
+    },
+    {
+      "id": "world.boat.hint",
+      "section": "World labels and prompts",
+      "source": "world item boat.hint",
+      "text": "E · LAUNCH THE BOAT"
+    },
+    {
+      "id": "world.boat.location",
+      "section": "World labels and prompts",
+      "source": "world item boat.location",
+      "text": "NORTH DOCK"
+    },
+    {
+      "id": "world.note.name",
+      "section": "World labels and prompts",
+      "source": "world item note.name",
+      "text": "Maintenance log"
+    },
+    {
+      "id": "world.note.hint",
+      "section": "World labels and prompts",
+      "source": "world item note.hint",
+      "text": "E · READ MAINTENANCE LOG"
+    },
+    {
+      "id": "world.evidence.hint",
+      "section": "World labels and prompts",
+      "source": "world item evidence.hint",
+      "text": "E · RECOVER SEALED RECORDS"
+    },
+    {
+      "id": "world.evidence.location",
+      "section": "World labels and prompts",
+      "source": "world item evidence.location",
+      "text": "HILLTOP PAVILION"
+    },
+    {
+      "id": "world.journal-0.hint",
+      "section": "World labels and prompts",
+      "source": "world item journal-0.hint",
+      "text": "E · READ EXPLORER JOURNAL"
+    },
+    {
+      "id": "world.journal-0.location",
+      "section": "World labels and prompts",
+      "source": "world item journal-0.location",
+      "text": "ABANDONED HOUSE 1"
+    },
+    {
+      "id": "world.journal-1.location",
+      "section": "World labels and prompts",
+      "source": "world item journal-1.location",
+      "text": "ABANDONED HOUSE 2"
+    },
+    {
+      "id": "world.journal-2.location",
+      "section": "World labels and prompts",
+      "source": "world item journal-2.location",
+      "text": "ABANDONED HOUSE 3"
+    },
+    {
+      "id": "world.journal-3.location",
+      "section": "World labels and prompts",
+      "source": "world item journal-3.location",
+      "text": "ABANDONED HOUSE 4"
+    },
+    {
+      "id": "world.journal-4.location",
+      "section": "World labels and prompts",
+      "source": "world item journal-4.location",
+      "text": "ABANDONED HOUSE 5"
+    },
+    {
+      "id": "world.journal-5.location",
+      "section": "World labels and prompts",
+      "source": "world item journal-5.location",
+      "text": "ABANDONED HOUSE 6"
+    },
+    {
+      "id": "world.journal-6.location",
+      "section": "World labels and prompts",
+      "source": "world item journal-6.location",
+      "text": "ABANDONED HOUSE 7"
+    },
+    {
+      "id": "world.journal-7.location",
+      "section": "World labels and prompts",
+      "source": "world item journal-7.location",
+      "text": "ABANDONED HOUSE 8"
+    },
+    {
+      "id": "world.journal-8.location",
+      "section": "World labels and prompts",
+      "source": "world item journal-8.location",
+      "text": "ABANDONED HOUSE 9"
+    },
+    {
+      "id": "world.journal-9.location",
+      "section": "World labels and prompts",
+      "source": "world item journal-9.location",
+      "text": "ABANDONED HOUSE 10"
+    },
+    {
+      "id": "world.supply-landing-cell.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-landing-cell.hint",
+      "text": "E · TAKE SPARE BATTERY"
+    },
+    {
+      "id": "world.supply-landing-matches.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-landing-matches.hint",
+      "text": "E · TAKE DRY MATCHES"
+    },
+    {
+      "id": "world.supply-crowbar.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-crowbar.hint",
+      "text": "E · TAKE RUSTY CROWBAR"
+    },
+    {
+      "id": "world.supply-crowbar.location",
+      "section": "World labels and prompts",
+      "source": "world item supply-crowbar.location",
+      "text": "West villa desk"
+    },
+    {
+      "id": "world.supply-cutters.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-cutters.hint",
+      "text": "E · TAKE BOLT CUTTERS"
+    },
+    {
+      "id": "world.supply-cutters.location",
+      "section": "World labels and prompts",
+      "source": "world item supply-cutters.location",
+      "text": "Generator shed"
+    },
+    {
+      "id": "world.supply-pick.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-pick.hint",
+      "text": "E · TAKE LOCKPICK"
+    },
+    {
+      "id": "world.supply-pick.location",
+      "section": "World labels and prompts",
+      "source": "world item supply-pick.location",
+      "text": "Guest house upstairs"
+    },
+    {
+      "id": "world.supply-staff-key.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-staff-key.hint",
+      "text": "E · TAKE BRASS CABINET KEY"
+    },
+    {
+      "id": "world.supply-staff-key.location",
+      "section": "World labels and prompts",
+      "source": "world item supply-staff-key.location",
+      "text": "West-lane house upstairs"
+    },
+    {
+      "id": "world.supply-recorder.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-recorder.hint",
+      "text": "E · TAKE POCKET RECORDER"
+    },
+    {
+      "id": "world.supply-recorder.location",
+      "section": "World labels and prompts",
+      "source": "world item supply-recorder.location",
+      "text": "East guest house upstairs"
+    },
+    {
+      "id": "world.supply-bottles.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-bottles.hint",
+      "text": "E · TAKE EMPTY GLASS BOTTLE"
+    },
+    {
+      "id": "world.supply-wax.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-wax.hint",
+      "text": "E · TAKE WAX CANDLE"
+    },
+    {
+      "id": "world.supply-wax.location",
+      "section": "World labels and prompts",
+      "source": "world item supply-wax.location",
+      "text": "West villa bedroom"
+    },
+    {
+      "id": "world.supply-boarded.name",
+      "section": "World labels and prompts",
+      "source": "world item supply-boarded.name",
+      "text": "Boarded supply crate"
+    },
+    {
+      "id": "world.supply-boarded.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-boarded.hint",
+      "text": "E · PRY BOARDED SUPPLY CRATE"
+    },
+    {
+      "id": "world.supply-boarded.location",
+      "section": "World labels and prompts",
+      "source": "world item supply-boarded.location",
+      "text": "West villa upstairs"
+    },
+    {
+      "id": "world.supply-medicine.name",
+      "section": "World labels and prompts",
+      "source": "world item supply-medicine.name",
+      "text": "Locked medicine cabinet"
+    },
+    {
+      "id": "world.supply-medicine.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-medicine.hint",
+      "text": "E · UNLOCK MEDICINE CABINET"
+    },
+    {
+      "id": "world.supply-medicine.location",
+      "section": "World labels and prompts",
+      "source": "world item supply-medicine.location",
+      "text": "Main villa upstairs"
+    },
+    {
+      "id": "world.supply-chained.name",
+      "section": "World labels and prompts",
+      "source": "world item supply-chained.name",
+      "text": "Chained supply case"
+    },
+    {
+      "id": "world.supply-chained.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-chained.hint",
+      "text": "E · CUT SUPPLY-CASE CHAIN"
+    },
+    {
+      "id": "world.supply-chained.location",
+      "section": "World labels and prompts",
+      "source": "world item supply-chained.location",
+      "text": "Southeast boathouse"
+    },
+    {
+      "id": "world.supply-paper-dock-manifest.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-paper-dock-manifest.hint",
+      "text": "E · READ THE LAST DEPARTURE"
+    },
+    {
+      "id": "world.supply-paper-crate-note.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-paper-crate-note.hint",
+      "text": "E · READ THE BOARDS STAY ON"
+    },
+    {
+      "id": "world.supply-paper-cabinet-memo.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-paper-cabinet-memo.hint",
+      "text": "E · READ STAFF CABINET"
+    },
+    {
+      "id": "world.supply-paper-chain-order.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-paper-chain-order.hint",
+      "text": "E · READ CUT THE CHAIN"
+    },
+    {
+      "id": "world.supply-paper-first-aid.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-paper-first-aid.hint",
+      "text": "E · READ GLASS IN THE CARPET"
+    },
+    {
+      "id": "world.supply-paper-listener-notes.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-paper-listener-notes.hint",
+      "text": "E · READ WHAT THE LISTENERS FOLLOW"
+    },
+    {
+      "id": "world.supply-paper-unposted-letter.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-paper-unposted-letter.hint",
+      "text": "E · READ TO WHOEVER FINDS THE BAG"
+    },
+    {
+      "id": "world.supply-paper-pavilion-record.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-paper-pavilion-record.hint",
+      "text": "E · READ THE MISSING HOUR"
+    },
+    {
+      "id": "world.supply-glass-522491438.name",
+      "section": "World labels and prompts",
+      "source": "world item supply-glass-522491438.name",
+      "text": "Broken glass"
+    },
+    {
+      "id": "world.supply-glass-522491438.hint",
+      "section": "World labels and prompts",
+      "source": "world item supply-glass-522491438.hint",
+      "text": "E · EXAMINE BROKEN GLASS"
+    },
+    {
+      "id": "world.supply-glass-522491438.location",
+      "section": "World labels and prompts",
+      "source": "world item supply-glass-522491438.location",
+      "text": "Villa bedroom"
+    },
+    {
+      "id": "room.room-0.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-0.name",
+      "text": "Wardrobe"
+    },
+    {
+      "id": "room.room-0.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-0.hint",
+      "text": "[E] Open wardrobe"
+    },
+    {
+      "id": "room.room-1.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-1.name",
+      "text": "Bedside drawers"
+    },
+    {
+      "id": "room.room-1.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-1.hint",
+      "text": "[E] Open and search drawers"
+    },
+    {
+      "id": "room.room-2.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-2.name",
+      "text": "Bed"
+    },
+    {
+      "id": "room.room-2.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-2.hint",
+      "text": "[E] Search beneath bed"
+    },
+    {
+      "id": "room.room-3.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-3.name",
+      "text": "Desk"
+    },
+    {
+      "id": "room.room-3.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-3.hint",
+      "text": "[E] Search desk"
+    },
+    {
+      "id": "room.room-4.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-4.name",
+      "text": "Mirror"
+    },
+    {
+      "id": "room.room-4.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-4.hint",
+      "text": "[E] Touch mirror"
+    },
+    {
+      "id": "room.room-5.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-5.name",
+      "text": "Bloodstained warning"
+    },
+    {
+      "id": "room.room-5.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-5.hint",
+      "text": "[E] Read bloodstained warning"
+    },
+    {
+      "id": "room.room-6.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-6.name",
+      "text": "Blood trail"
+    },
+    {
+      "id": "room.room-6.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-6.hint",
+      "text": "[E] Inspect blood trail"
+    },
+    {
+      "id": "room.room-21.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-21.name",
+      "text": "House doors"
+    },
+    {
+      "id": "room.room-21.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-21.hint",
+      "text": "[E] Close house doors"
+    },
+    {
+      "id": "room.room-22.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-22.name",
+      "text": "Boarded window"
+    },
+    {
+      "id": "room.room-22.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-22.hint",
+      "text": "[E] Check window"
+    },
+    {
+      "id": "room.room-518.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-518.name",
+      "text": "Storage crates"
+    },
+    {
+      "id": "room.room-518.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-518.hint",
+      "text": "[E] Search beneath storage crates"
+    },
+    {
+      "id": "room.room-561.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-561.name",
+      "text": "Brush"
+    },
+    {
+      "id": "room.room-561.description",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-561.description",
+      "text": "The leaves scrape against each other. Something could be standing just beyond them."
+    },
+    {
+      "id": "room.room-561.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-561.hint",
+      "text": "[E] Inspect brush"
+    },
+    {
+      "id": "room.room-563.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-563.name",
+      "text": "Palm trunk"
+    },
+    {
+      "id": "room.room-563.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-563.hint",
+      "text": "[E] Inspect palm trunk"
+    },
+    {
+      "id": "room.room-707.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-707.name",
+      "text": "Water tank"
+    },
+    {
+      "id": "room.room-707.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-707.hint",
+      "text": "[E] Inspect water tank"
+    },
+    {
+      "id": "room.room-710.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-710.name",
+      "text": "Solar panel"
+    },
+    {
+      "id": "room.room-710.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-710.hint",
+      "text": "[E] Inspect solar panel"
+    },
+    {
+      "id": "room.room-722.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-722.name",
+      "text": "Sealed container"
+    },
+    {
+      "id": "room.room-722.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-722.hint",
+      "text": "[E] Inspect sealed container"
+    },
+    {
+      "id": "room.room-725.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-725.name",
+      "text": "Road lamp"
+    },
+    {
+      "id": "room.room-725.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-725.hint",
+      "text": "[E] Test lamp switch"
+    },
+    {
+      "id": "room.room-731.name",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-731.name",
+      "text": "Radio mast"
+    },
+    {
+      "id": "room.room-731.hint",
+      "section": "Interactions",
+      "source": "dist/immersion.js / room-731.hint",
+      "text": "[E] Inspect radio mast"
+    },
+    {
+      "id": "game.001",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:1",
+      "text": "use strict"
+    },
+    {
+      "id": "game.002",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:4",
+      "text": "no-return-basic-renderer"
+    },
+    {
+      "id": "game.003",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:8",
+      "text": "no-return-muted"
+    },
+    {
+      "id": "game.004",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:12",
+      "text": "no-return-best"
+    },
+    {
+      "id": "game.005",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:13",
+      "text": "no-return-volume"
+    },
+    {
+      "id": "game.007",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:17",
+      "text": "blood-warning"
+    },
+    {
+      "id": "game.008",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:18",
+      "text": "You collapsed before reaching the boat. The glass cuts never stopped bleeding."
+    },
+    {
+      "id": "game.009",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:20",
+      "text": "The flashlight needs a spare battery. [3] Replace / [Y] Backpack."
+    },
+    {
+      "id": "game.011",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:27",
+      "text": "ENTER THE ISLAND ↗"
+    },
+    {
+      "id": "game.012",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:27",
+      "text": "The beam is your only light.\nIt is also how he finds you.\nSwitch it off. Hold your breath."
+    },
+    {
+      "id": "game.013",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:29",
+      "text": "The browser reset the graphics device."
+    },
+    {
+      "id": "game.014",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:29",
+      "text": "CONTEXT_LOST"
+    },
+    {
+      "id": "game.015",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:35",
+      "text": "no-return-safe-graphics"
+    },
+    {
+      "id": "game.017",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:37",
+      "text": "Reduced resolution · light foliage · 768px shadows · light rain"
+    },
+    {
+      "id": "game.018",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:37",
+      "text": "Native resolution · denser foliage · 1536px shadows · layered clouds"
+    },
+    {
+      "id": "game.019",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:37",
+      "text": "Detailed scanned scenery · native resolution · 1536px soft shadows · storm weather"
+    },
+    {
+      "id": "game.020",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:37",
+      "text": "Maximum scenery density · 2048px soft shadows · optional traced lighting"
+    },
+    {
+      "id": "game.021",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:39",
+      "text": "[data-quality]"
+    },
+    {
+      "id": "game.022",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:39",
+      "text": "aria-pressed"
+    },
+    {
+      "id": "game.023",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:39",
+      "text": "p · textured map and interiors · reduced effects"
+    },
+    {
+      "id": "game.026",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:49",
+      "text": "SOUND {{dynamic_1}} {{dynamic_2}}",
+      "placeholders": [
+        {
+          "name": "dynamic_1",
+          "expression": "muted?'OFF':'ON'"
+        },
+        {
+          "name": "dynamic_2",
+          "expression": "muted?'◌':'≋'"
+        }
+      ]
+    },
+    {
+      "id": "game.028",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:52",
+      "text": "no-return-unscary"
+    },
+    {
+      "id": "game.029",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:52",
+      "text": "Your browser could not save this setting."
+    },
+    {
+      "id": "game.030",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:54",
+      "text": "On: fullscreen images, capture flashes and scare stingers."
+    },
+    {
+      "id": "game.031",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:54",
+      "text": "Off: hunters, gore and atmosphere remain. No sudden images, capture flashes or scare stingers."
+    },
+    {
+      "id": "game.032",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:57",
+      "text": "Find the spare fuse"
+    },
+    {
+      "id": "game.033",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:57",
+      "text": "West guest villa"
+    },
+    {
+      "id": "game.034",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:57",
+      "text": "Restore generator power"
+    },
+    {
+      "id": "game.035",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:57",
+      "text": "Utility yard beside the helipad"
+    },
+    {
+      "id": "game.036",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:57",
+      "text": "Recover the boat key"
+    },
+    {
+      "id": "game.037",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:57",
+      "text": "Main compound lockbox"
+    },
+    {
+      "id": "game.038",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:57",
+      "text": "Collect boat fuel"
+    },
+    {
+      "id": "game.040",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:57",
+      "text": "Return to the dock and escape"
+    },
+    {
+      "id": "game.042",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:57",
+      "text": "Optional: recover sealed records"
+    },
+    {
+      "id": "game.044",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "[Y] BAG · [J] FILES"
+    },
+    {
+      "id": "game.045",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "ϟ POWER RESTORED"
+    },
+    {
+      "id": "game.046",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "⚿ BOAT KEY"
+    },
+    {
+      "id": "game.047",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "CATCH YOUR BREATH"
+    },
+    {
+      "id": "game.048",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "RELEASE SHIFT TO SPRINT"
+    },
+    {
+      "id": "game.049",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "HIDING · [E] LEAVE ·"
+    },
+    {
+      "id": "game.050",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "CANDLE LIT · F EXTINGUISH"
+    },
+    {
+      "id": "game.051",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "FLASHLIGHT {{dynamic_1}}",
+      "placeholders": [
+        {
+          "name": "dynamic_1",
+          "expression": "flashlight?'ON':'OFF'"
+        }
+      ]
+    },
+    {
+      "id": "game.052",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "● HE KNOWS"
+    },
+    {
+      "id": "game.053",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "◉ HIDING · KEEP STILL"
+    },
+    {
+      "id": "game.054",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "◉ SOMETHING IS LISTENING"
+    },
+    {
+      "id": "game.055",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "◉ LIGHT EXPOSED"
+    },
+    {
+      "id": "game.056",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "● STAY QUIET"
+    },
+    {
+      "id": "game.057",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "pickup-focus"
+    },
+    {
+      "id": "game.058",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "lights-off"
+    },
+    {
+      "id": "game.059",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "8 HITBOX ON · ENEMY"
+    },
+    {
+      "id": "game.060",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "9 DAYLIGHT ON ·"
+    },
+    {
+      "id": "game.061",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "· BASIC 3D · 256PX MAPS"
+    },
+    {
+      "id": "game.062",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:61",
+      "text": "· TRACED GI"
+    },
+    {
+      "id": "game.063",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:62",
+      "text": "{{dynamic_1}}:{{dynamic_2}}",
+      "placeholders": [
+        {
+          "name": "dynamic_1",
+          "expression": "Math.floor(t/60).toString().padStart(2,'0')"
+        },
+        {
+          "name": "dynamic_2",
+          "expression": "Math.floor(t%60).toString().padStart(2,'0')"
+        }
+      ]
+    },
+    {
+      "id": "game.064",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:63",
+      "text": "map-panel"
+    },
+    {
+      "id": "game.065",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:63",
+      "text": "inventory-panel"
+    },
+    {
+      "id": "game.066",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:63",
+      "text": "document-panel"
+    },
+    {
+      "id": "game.067",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:65",
+      "text": "(pointer:fine)"
+    },
+    {
+      "id": "game.068",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:66",
+      "text": "BACK TO THE ISLAND"
+    },
+    {
+      "id": "game.070",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:68",
+      "text": "The landing is clear. Find the marked supplies. Do not trust every footstep. [M] Map."
+    },
+    {
+      "id": "game.072",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:73",
+      "text": "HOLD YOUR BREATH\nStill here.\nYour time: {{dynamic_1}}. The island waits.\nMASTER VOLUME {{dynamic_2}}%\nKEEP GOING ↗\nHow to survive\nSave / load code\nRestart from the shore\nMain menu",
+      "placeholders": [
+        {
+          "name": "dynamic_1",
+          "expression": "formatTime(elapsed)"
+        },
+        {
+          "name": "dynamic_2",
+          "expression": "Math.round(volume*100)"
+        },
+        {
+          "name": "dynamic_3",
+          "expression": "Math.round(volume*100)"
+        }
+      ]
+    },
+    {
+      "id": "game.074",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:75",
+      "text": "ISLAND FIELD MAP / 1 UNIT = 1 METRE\nFind your way out.\n−\n+\nFIND ME\nWHOLE ISLAND\nDrag to pan · scroll to zoom\nLABEL\nTYPE Note Danger Supplies Hiding place\nADD MARK\nUPDATE MARK\n\nDrag to pan. Click Add mark to annotate.\n\n● YOU · 1 FUSE · 2 GENERATOR · 3 KEY · 4 FUEL · 5 ESCAPE · 6 OPTIONAL RECORDS\nA compact fictional island: villa lanes, utility yard, wooded shortcuts and the north dock.\nDownload island layout\nBACK TO THE ISLAND ↗"
+    },
+    {
+      "id": "game.076",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:75",
+      "text": "swimming_pool"
+    },
+    {
+      "id": "game.077",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:75",
+      "text": "10px monospace"
+    },
+    {
+      "id": "game.078",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:75",
+      "text": "bold 13px monospace"
+    },
+    {
+      "id": "game.079",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:75",
+      "text": "12px monospace"
+    },
+    {
+      "id": "game.080",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:75",
+      "text": "m COMPACT ISLAND"
+    },
+    {
+      "id": "game.081",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:76",
+      "text": "(prefers-reduced-motion: reduce)"
+    },
+    {
+      "id": "game.082",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:79",
+      "text": "FICTIONAL EXPLORER JOURNAL"
+    },
+    {
+      "id": "game.083",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:79",
+      "text": "FICTIONAL EXPLORER JOURNAL /"
+    },
+    {
+      "id": "game.084",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:79",
+      "text": "PUT IT AWAY ↗"
+    },
+    {
+      "id": "game.085",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:79",
+      "text": "Fuse recovered. The generator is beside the central helipad."
+    },
+    {
+      "id": "game.086",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:79",
+      "text": "The fuse slot is empty. Search the west guest villa."
+    },
+    {
+      "id": "game.087",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:79",
+      "text": "The generator is running. The villa lockbox has power."
+    },
+    {
+      "id": "game.088",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:79",
+      "text": "Power restored. The villa’s electronic lockbox is active."
+    },
+    {
+      "id": "game.089",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:80",
+      "text": "The lockbox has no power. Restore the generator first."
+    },
+    {
+      "id": "game.090",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:80",
+      "text": "Boat key recovered. Find fuel in the southeast boathouse."
+    },
+    {
+      "id": "game.091",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:81",
+      "text": "Fuel recovered. Get back to the north dock."
+    },
+    {
+      "id": "game.092",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:81",
+      "text": "Fuel recovered. You still need the boat key from the villa."
+    },
+    {
+      "id": "game.093",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:82",
+      "text": "The boat needs"
+    },
+    {
+      "id": "game.094",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:82",
+      "text": "its key"
+    },
+    {
+      "id": "game.095",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:83",
+      "text": "dock-manifest"
+    },
+    {
+      "id": "game.096",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:83",
+      "text": "MAINTENANCE LOG / 00:43\nThe lights went out.\n“Spare fuse is here in the maintenance hut. Generator is beside the central helipad. Once power is back, the key safe in the main villa should open.”\n“Fuel cans are in the southeast boathouse. One last thing: Epstein can see the flashlight. Switch it off before he closes in. The dark hides you, but he remembers where you were. Move quietly.”\nPUT IT DOWN ↗"
+    },
+    {
+      "id": "game.097",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:84",
+      "text": "sealed-records"
+    },
+    {
+      "id": "game.098",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:84",
+      "text": "Sealed records secured. Bring them off the island."
+    },
+    {
+      "id": "game.099",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:85",
+      "text": "Capture presentation:"
+    },
+    {
+      "id": "game.101",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "{{dynamic_1}}\n{{dynamic_2}}\n{{dynamic_3}}\n{{dynamic_4}}\n{{dynamic_5}} ↗\nStudy the island map",
+      "placeholders": [
+        {
+          "name": "dynamic_1",
+          "expression": "won?'TRANSMISSION RESTORED / DAWN APPROACHING':'TRANSMISSION TERMINATED'"
+        },
+        {
+          "name": "dynamic_2",
+          "expression": "won?'You made it out.':'You were found.'"
+        },
+        {
+          "name": "dynamic_3",
+          "expression": "won?'The engine catches. The dock disappears into the dark. A covered shape on the shore grows smaller. For the first time tonight, the footsteps stop.':(reason||'A hand catches your shoulder. The last thing you hear is the ocean. You were so close to leaving.')"
+        },
+        {
+          "name": "dynamic_4",
+          "expression": "won?`ESCAPE TIME ${formatTime(elapsed)} · ${record?'NEW PERSONAL BEST':'BEST '+formatTime(best)}<br>${evidence?'You brought the sealed records with you. Some secrets won’t stay on this island.':'You escaped. The sealed records remain in the hilltop pavilion.'}`:'Break line of sight behind walls. Turn off your light and crouch when Epstein is close. Sprint only when you need distance.'"
+        },
+        {
+          "name": "dynamic_5",
+          "expression": "won?'RETURN TO THE ISLAND':'TRY AGAIN'"
+        }
+      ]
+    },
+    {
+      "id": "game.102",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "TRANSMISSION RESTORED / DAWN APPROACHING"
+    },
+    {
+      "id": "game.103",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "TRANSMISSION TERMINATED"
+    },
+    {
+      "id": "game.104",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "You made it out."
+    },
+    {
+      "id": "game.105",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "You were found."
+    },
+    {
+      "id": "game.106",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "The engine catches. The dock disappears into the dark. A covered shape on the shore grows smaller. For the first time tonight, the footsteps stop."
+    },
+    {
+      "id": "game.107",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "A hand catches your shoulder. The last thing you hear is the ocean. You were so close to leaving."
+    },
+    {
+      "id": "game.108",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "ESCAPE TIME {{dynamic_1}} · {{dynamic_2}}\n{{dynamic_3}}",
+      "placeholders": [
+        {
+          "name": "dynamic_1",
+          "expression": "formatTime(elapsed)"
+        },
+        {
+          "name": "dynamic_2",
+          "expression": "record?'NEW PERSONAL BEST':'BEST '+formatTime(best)"
+        },
+        {
+          "name": "dynamic_3",
+          "expression": "evidence?'You brought the sealed records with you. Some secrets won’t stay on this island.':'You escaped. The sealed records remain in the hilltop pavilion.'"
+        }
+      ]
+    },
+    {
+      "id": "game.109",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "NEW PERSONAL BEST"
+    },
+    {
+      "id": "game.111",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "You brought the sealed records with you. Some secrets won’t stay on this island."
+    },
+    {
+      "id": "game.113",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "You escaped. The sealed records remain in the hilltop pavilion."
+    },
+    {
+      "id": "game.115",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "Break line of sight behind walls. Turn off your light and crouch when Epstein is close. Sprint only when you need distance."
+    },
+    {
+      "id": "game.116",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "RETURN TO THE ISLAND"
+    },
+    {
+      "id": "game.117",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:86",
+      "text": "TRY AGAIN"
+    },
+    {
+      "id": "game.118",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:92",
+      "text": "He saw the light. Break sight, switch it off, and move quietly. [F]"
+    },
+    {
+      "id": "game.122",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:107",
+      "text": "[data-key]"
+    },
+    {
+      "id": "game.123",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:110",
+      "text": "State restored. Your map marks and collected files are back."
+    },
+    {
+      "id": "game.124",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:111",
+      "text": "FIELD RECOVERY / PORTABLE SAVE\nLeave a way back.\nA save code contains this run: your position, supplies, collected files, opened rooms, hunters and map marks. Keep the complete code to continue later."
+    },
+    {
+      "id": "game.125",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:111",
+      "text": "YOUR CURRENT STATE\nCOPY CODE\nDOWNLOAD .TXT"
+    },
+    {
+      "id": "game.126",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:111",
+      "text": "RESTORE A CODE\n\nRESTORE STATE ↗"
+    },
+    {
+      "id": "game.127",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:111",
+      "text": "Back to this run"
+    },
+    {
+      "id": "game.128",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:111",
+      "text": "Back to the menu"
+    },
+    {
+      "id": "game.129",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:111",
+      "text": "Code copied. Keep it somewhere safe."
+    },
+    {
+      "id": "game.130",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:111",
+      "text": "Select the code above and copy it."
+    },
+    {
+      "id": "game.131",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:111",
+      "text": "text/plain"
+    },
+    {
+      "id": "game.132",
+      "section": "Menus, objectives and endings",
+      "source": "dist/game.js:111",
+      "text": "no-return-save.txt"
+    },
+    {
+      "id": "immersion.004",
+      "section": "Interactions",
+      "source": "dist/immersion.js:20",
+      "text": "blood-note"
+    },
+    {
+      "id": "immersion.006",
+      "section": "Interactions",
+      "source": "dist/immersion.js:21",
+      "text": "blood-trail"
+    },
+    {
+      "id": "immersion.017",
+      "section": "Interactions",
+      "source": "dist/immersion.js:51",
+      "text": "[E] Leave wardrobe · stay still and listen"
+    },
+    {
+      "id": "immersion.018",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Hide inside · [Q] Close wardrobe"
+    },
+    {
+      "id": "immersion.019",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Open wardrobe"
+    },
+    {
+      "id": "immersion.020",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Close drawers"
+    },
+    {
+      "id": "immersion.021",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Open and search drawers"
+    },
+    {
+      "id": "immersion.022",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Close house doors"
+    },
+    {
+      "id": "immersion.023",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Open house doors"
+    },
+    {
+      "id": "immersion.025",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Read bloodstained warning"
+    },
+    {
+      "id": "immersion.026",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Switch lamp off"
+    },
+    {
+      "id": "immersion.027",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Test lamp switch"
+    },
+    {
+      "id": "immersion.028",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Search beneath"
+    },
+    {
+      "id": "immersion.029",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Search desk"
+    },
+    {
+      "id": "immersion.030",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Touch mirror"
+    },
+    {
+      "id": "immersion.031",
+      "section": "Interactions",
+      "source": "dist/immersion.js:52",
+      "text": "Check window"
+    },
+    {
+      "id": "immersion.032",
+      "section": "Interactions",
+      "source": "dist/immersion.js:55",
+      "text": "The way out is blocked."
+    },
+    {
+      "id": "immersion.033",
+      "section": "Interactions",
+      "source": "dist/immersion.js:55",
+      "text": "You step out of the wardrobe."
+    },
+    {
+      "id": "immersion.034",
+      "section": "Interactions",
+      "source": "dist/immersion.js:57",
+      "text": "Reach the wardrobe from the front."
+    },
+    {
+      "id": "immersion.035",
+      "section": "Interactions",
+      "source": "dist/immersion.js:59",
+      "text": "Wait for the door to open."
+    },
+    {
+      "id": "immersion.036",
+      "section": "Interactions",
+      "source": "dist/immersion.js:61",
+      "text": "He saw you get in. This door will not save you."
+    },
+    {
+      "id": "immersion.037",
+      "section": "Interactions",
+      "source": "dist/immersion.js:61",
+      "text": "Inside the wardrobe. Keep still. [E] Leave."
+    },
+    {
+      "id": "immersion.038",
+      "section": "Interactions",
+      "source": "dist/immersion.js:63",
+      "text": "The drawer scrapes open. A button, a broken comb and old dust."
+    },
+    {
+      "id": "immersion.039",
+      "section": "Interactions",
+      "source": "dist/immersion.js:63",
+      "text": "You push the drawers shut."
+    },
+    {
+      "id": "immersion.040",
+      "section": "Interactions",
+      "source": "dist/immersion.js:63",
+      "text": "The doors creak open."
+    },
+    {
+      "id": "immersion.041",
+      "section": "Interactions",
+      "source": "dist/immersion.js:63",
+      "text": "Doors closed. Hunters can force them open."
+    },
+    {
+      "id": "immersion.043",
+      "section": "Interactions",
+      "source": "dist/immersion.js:65",
+      "text": "The switch clicks. The bulb is dead."
+    },
+    {
+      "id": "immersion.044",
+      "section": "Interactions",
+      "source": "dist/immersion.js:65",
+      "text": "You switch it off."
+    },
+    {
+      "id": "immersion.045",
+      "section": "Interactions",
+      "source": "dist/immersion.js:67",
+      "text": "Underneath: a single shoe and fingernail scratches leading toward the wardrobe."
+    },
+    {
+      "id": "immersion.046",
+      "section": "Interactions",
+      "source": "dist/immersion.js:67",
+      "text": "You search the desk. Damp receipts, a snapped pencil. Someone carved “DO NOT ANSWER” into the wood."
+    },
+    {
+      "id": "immersion.047",
+      "section": "Interactions",
+      "source": "dist/immersion.js:67",
+      "text": "The glass is cold. For a moment, the tapping comes from the other side."
+    },
+    {
+      "id": "immersion.048",
+      "section": "Interactions",
+      "source": "dist/immersion.js:67",
+      "text": "You tug the boards. Nailed shut. The knock echoes outside."
+    },
+    {
+      "id": "immersion.049",
+      "section": "Interactions",
+      "source": "dist/immersion.js:67",
+      "text": "You tap the tank. Something taps back, once."
+    },
+    {
+      "id": "immersion.050",
+      "section": "Interactions",
+      "source": "dist/immersion.js:67",
+      "text": "The wiring has been cut. This cannot power the boat."
+    },
+    {
+      "id": "immersion.051",
+      "section": "Interactions",
+      "source": "dist/immersion.js:67",
+      "text": "Locked from the outside. You hear a soft scrape from within."
+    },
+    {
+      "id": "immersion.052",
+      "section": "Interactions",
+      "source": "dist/immersion.js:67",
+      "text": "Only static. Then a breath that stops when you let go."
+    },
+    {
+      "id": "immersion.054",
+      "section": "Interactions",
+      "source": "dist/immersion.js:67",
+      "text": "The blood is still wet. The trail leads to the warning and the wardrobe."
+    },
+    {
+      "id": "immersion.055",
+      "section": "Interactions",
+      "source": "dist/immersion.js:68",
+      "text": "Nothing you can carry. Keep moving."
+    },
+    {
+      "id": "immersion.056",
+      "section": "Interactions",
+      "source": "dist/immersion.js:78",
+      "text": "witnessed-wardrobe"
+    },
+    {
+      "id": "immersion.057",
+      "section": "Interactions",
+      "source": "dist/immersion.js:78",
+      "text": "The wardrobe handle turns. He knows."
+    },
+    {
+      "id": "immersion.062",
+      "section": "Interactions",
+      "source": "dist/immersion.js:97",
+      "text": "closet-door"
+    },
+    {
+      "id": "immersion.063",
+      "section": "Interactions",
+      "source": "dist/immersion.js:97",
+      "text": "house-door"
+    },
+    {
+      "id": "immersion.066",
+      "section": "Interactions",
+      "source": "dist/immersion.js:101",
+      "text": "house-door-"
+    },
+    {
+      "id": "survival.034",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:15",
+      "text": "brass-key"
+    },
+    {
+      "id": "survival.093",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:30",
+      "text": "battery-slip"
+    },
+    {
+      "id": "survival.100",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:31",
+      "text": "first-aid"
+    },
+    {
+      "id": "survival.107",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:32",
+      "text": "crate-note"
+    },
+    {
+      "id": "survival.114",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:33",
+      "text": "cabinet-memo"
+    },
+    {
+      "id": "survival.121",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:34",
+      "text": "chain-order"
+    },
+    {
+      "id": "survival.128",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:35",
+      "text": "rope-warning"
+    },
+    {
+      "id": "survival.135",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:36",
+      "text": "listener-notes"
+    },
+    {
+      "id": "survival.142",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:37",
+      "text": "attendant-report"
+    },
+    {
+      "id": "survival.149",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:38",
+      "text": "unposted-letter"
+    },
+    {
+      "id": "survival.156",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:39",
+      "text": "pavilion-record"
+    },
+    {
+      "id": "survival.163",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:40",
+      "text": "tape-transcript"
+    },
+    {
+      "id": "survival.185",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:47",
+      "text": "Supply cache"
+    },
+    {
+      "id": "survival.186",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:47",
+      "text": "ISLAND SUPPLIES"
+    },
+    {
+      "id": "survival.187",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:49",
+      "text": "landing-cell"
+    },
+    {
+      "id": "survival.189",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:50",
+      "text": "landing-matches"
+    },
+    {
+      "id": "survival.193",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:53",
+      "text": "compact-house-0"
+    },
+    {
+      "id": "survival.195",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:56",
+      "text": "staff-key"
+    },
+    {
+      "id": "survival.228",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:78",
+      "text": "Everything you carry is here. Select an item to inspect or use it."
+    },
+    {
+      "id": "survival.229",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:79",
+      "text": ". A document was filed in [J] Files."
+    },
+    {
+      "id": "survival.230",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:81",
+      "text": "The case is empty. Its contents are in your backpack."
+    },
+    {
+      "id": "survival.232",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:81",
+      "text": "Requires the brass cabinet key or a lockpick."
+    },
+    {
+      "id": "survival.233",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:81",
+      "text": ". Check [Y] Backpack."
+    },
+    {
+      "id": "survival.234",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:81",
+      "text": "Get within reach of the case on the same floor."
+    },
+    {
+      "id": "survival.235",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:81",
+      "text": ". New file saved in [J]."
+    },
+    {
+      "id": "survival.236",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:82",
+      "text": "Broken glass. Crouch to cross it without cutting your feet."
+    },
+    {
+      "id": "survival.239",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:82",
+      "text": ". [Y] Backpack / [J] Files."
+    },
+    {
+      "id": "survival.240",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:84",
+      "text": "You do not have that item."
+    },
+    {
+      "id": "survival.241",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:85",
+      "text": "on. The beam makes you visible."
+    },
+    {
+      "id": "survival.242",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:85",
+      "text": "off. Save the remaining charge."
+    },
+    {
+      "id": "survival.243",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:87",
+      "text": "The cell is already full. Save the spare."
+    },
+    {
+      "id": "survival.244",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:87",
+      "text": "New battery fitted. Flashlight charge: 100%."
+    },
+    {
+      "id": "survival.245",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:88",
+      "text": "You are uninjured. Save this for later."
+    },
+    {
+      "id": "survival.246",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:88",
+      "text": "Bleeding stopped. Condition:"
+    },
+    {
+      "id": "survival.248",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:89",
+      "text": "Aim at a matching supply case within reach before using this tool."
+    },
+    {
+      "id": "survival.249",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:90",
+      "text": "Aim at an open wardrobe to cut clean fabric."
+    },
+    {
+      "id": "survival.250",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:90",
+      "text": "Open the wardrobe before reaching for the clothes."
+    },
+    {
+      "id": "survival.251",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:90",
+      "text": "The remaining cloth is too dirty. Try another wardrobe."
+    },
+    {
+      "id": "survival.252",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:90",
+      "text": "Cut clean fabric into two bandages."
+    },
+    {
+      "id": "survival.253",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:91",
+      "text": "Hide inside a wardrobe first, then tie its handle."
+    },
+    {
+      "id": "survival.254",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:91",
+      "text": "This wardrobe is already braced."
+    },
+    {
+      "id": "survival.255",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:91",
+      "text": "The door has already been forced. Get out."
+    },
+    {
+      "id": "survival.256",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:91",
+      "text": "Handle tied. A witnessed hiding place takes four extra seconds to force."
+    },
+    {
+      "id": "survival.257",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:92",
+      "text": "Leave the wardrobe before throwing a bottle."
+    },
+    {
+      "id": "survival.258",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:92",
+      "text": "There is no room to throw. Face a clear lane."
+    },
+    {
+      "id": "survival.259",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:92",
+      "text": "Glass breaks"
+    },
+    {
+      "id": "survival.260",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:92",
+      "text": "m ahead. Move away from the sound."
+    },
+    {
+      "id": "survival.261",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:93",
+      "text": "Place the recorder before hiding."
+    },
+    {
+      "id": "survival.262",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:93",
+      "text": "The recorder needs"
+    },
+    {
+      "id": "survival.263",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:93",
+      "text": "seconds to reset."
+    },
+    {
+      "id": "survival.264",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:93",
+      "text": "Face an open lane before placing the recorder."
+    },
+    {
+      "id": "survival.265",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:93",
+      "text": "Footstep loop placed ahead. It plays for twelve seconds. Leave quietly."
+    },
+    {
+      "id": "survival.266",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:94",
+      "text": "Find the pocket recorder in the east guest house upstairs."
+    },
+    {
+      "id": "survival.269",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:96",
+      "text": "Candle extinguished."
+    },
+    {
+      "id": "survival.270",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:96",
+      "text": "seconds of wax remain."
+    },
+    {
+      "id": "survival.271",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:96",
+      "text": "A dry match is needed to light the wick."
+    },
+    {
+      "id": "survival.272",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:96",
+      "text": "Candle lit. Dim light reaches nine metres. Hunters can see it. F extinguishes it."
+    },
+    {
+      "id": "survival.273",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:97",
+      "text": "Aim at"
+    },
+    {
+      "id": "survival.274",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:97",
+      "text": "the generator beside the helipad."
+    },
+    {
+      "id": "survival.275",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:97",
+      "text": "the escape boat on the north dock."
+    },
+    {
+      "id": "survival.278",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:99",
+      "text": "Keep this item with you."
+    },
+    {
+      "id": "survival.279",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:101",
+      "text": "The flashlight is dead. Fit a spare battery from [Y] or press [3]."
+    },
+    {
+      "id": "survival.280",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:101",
+      "text": "The candle has burned out."
+    },
+    {
+      "id": "survival.281",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:101",
+      "text": "Glass cuts your feet. You are bleeding. [2] Bandage / [Y] Backpack."
+    },
+    {
+      "id": "survival.282",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:103",
+      "text": "\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\">"
+    },
+    {
+      "id": "survival.283",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:105",
+      "text": "Inspect the item, then choose its action. Tools need a matching object within reach."
+    },
+    {
+      "id": "survival.284",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:106",
+      "text": "\" data-item=\""
+    },
+    {
+      "id": "survival.285",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:106",
+      "text": "\" aria-label=\"Inspect"
+    },
+    {
+      "id": "survival.286",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:106",
+      "text": "\" aria-pressed=\""
+    },
+    {
+      "id": "survival.288",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:107",
+      "text": "FIELD EQUIPMENT / PERSONAL EFFECTS\nWhat you carry.\n\nCLOSE Y / ESC"
+    },
+    {
+      "id": "survival.289",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:107",
+      "text": "TOOLS STAY WITH YOU · SUPPLIES STACK · ESCAPE ITEMS ARE KEPT SAFE"
+    },
+    {
+      "id": "survival.290",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:107",
+      "text": "NR / FIELD ISSUE"
+    },
+    {
+      "id": "survival.292",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:107",
+      "text": "1 BOTTLE   2 BANDAGE   3 BATTERY   4 CANDLE INVENTORY OPEN · GAME PAUSED"
+    },
+    {
+      "id": "survival.294",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:109",
+      "text": "[data-item]"
+    },
+    {
+      "id": "survival.295",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:109",
+      "text": "[data-document]"
+    },
+    {
+      "id": "survival.296",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:111",
+      "text": "A pocket recorder is needed to play this cassette."
+    },
+    {
+      "id": "survival.297",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:111",
+      "text": "CLOSE ESC"
+    },
+    {
+      "id": "survival.298",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:111",
+      "text": "bloody-warning"
+    },
+    {
+      "id": "survival.299",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:111",
+      "text": "FILED / NO RETURN"
+    },
+    {
+      "id": "survival.300",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:111",
+      "text": "PUT IT AWAY"
+    },
+    {
+      "id": "survival.301",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:111",
+      "text": "BACK TO FILES"
+    },
+    {
+      "id": "survival.302",
+      "section": "Equipment messages and reader interface",
+      "source": "dist/survival.js:111",
+      "text": "↗\nDOCUMENT ARCHIVE [J]"
+    },
+    {
+      "id": "horror.002",
+      "section": "Explorer journals",
+      "source": "dist/horror.js:3",
+      "text": "Stephen Hawking apparition"
+    },
+    {
+      "id": "horror.003",
+      "section": "Explorer journals",
+      "source": "dist/horror.js:3",
+      "text": "Donald Trump apparition"
+    },
+    {
+      "id": "horror.004",
+      "section": "Explorer journals",
+      "source": "dist/horror.js:3",
+      "text": "P. Diddy apparition"
+    },
+    {
+      "id": "horror.026",
+      "section": "Explorer journals",
+      "source": "dist/horror.js:15",
+      "text": "ABANDONED HOUSE"
+    },
+    {
+      "id": "arrival.002",
+      "section": "Boat arrival",
+      "source": "dist/arrival.js:8",
+      "text": "Cold water. An engine ticking as it cools."
+    },
+    {
+      "id": "arrival.003",
+      "section": "Boat arrival",
+      "source": "dist/arrival.js:9",
+      "text": "Your eyes find the edge of the boat."
+    },
+    {
+      "id": "arrival.004",
+      "section": "Boat arrival",
+      "source": "dist/arrival.js:10",
+      "text": "You sit up. Something has been moving on the shore."
+    },
+    {
+      "id": "arrival.005",
+      "section": "Boat arrival",
+      "source": "dist/arrival.js:11",
+      "text": "Two dry batteries. The last things in your pocket."
+    },
+    {
+      "id": "arrival.006",
+      "section": "Boat arrival",
+      "source": "dist/arrival.js:12",
+      "text": "Thread the cap. Keep your hands steady."
+    },
+    {
+      "id": "arrival.007",
+      "section": "Boat arrival",
+      "source": "dist/arrival.js:13",
+      "text": "The dock is empty. You cannot stay here."
+    },
+    {
+      "id": "arrival.008",
+      "section": "Boat arrival",
+      "source": "dist/arrival.js:20",
+      "text": "translateY({{dynamic_1}}%)",
+      "placeholders": [
+        {
+          "name": "dynamic_1",
+          "expression": "sign*open*105"
+        }
+      ]
+    },
+    {
+      "id": "map-pins.002",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:4",
+      "text": "Choose a point inside the map."
+    },
+    {
+      "id": "map-pins.003",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:4",
+      "text": "The map already has forty marks. Remove one first."
+    },
+    {
+      "id": "map-pins.004",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:4",
+      "text": "Something here"
+    },
+    {
+      "id": "map-pins.005",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:6",
+      "text": "Invalid map marks."
+    },
+    {
+      "id": "map-pins.006",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:6",
+      "text": "Invalid map mark."
+    },
+    {
+      "id": "map-pins.007",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:6",
+      "text": "Repeated map mark."
+    },
+    {
+      "id": "map-pins.008",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:7",
+      "text": "bold 17px monospace"
+    },
+    {
+      "id": "map-pins.009",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:9",
+      "text": "\" style=\"color:"
+    },
+    {
+      "id": "map-pins.010",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:9",
+      "text": "\" aria-label=\"Remove"
+    },
+    {
+      "id": "map-pins.011",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:9",
+      "text": "No personal marks yet."
+    },
+    {
+      "id": "map-pins.012",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:9",
+      "text": "[data-pin-remove]"
+    },
+    {
+      "id": "map-pins.013",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:9",
+      "text": "[data-pin-edit]"
+    },
+    {
+      "id": "map-pins.014",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:9",
+      "text": "Edit the label, then press Update mark."
+    },
+    {
+      "id": "map-pins.016",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:10",
+      "text": "Click the map to place a mark. Dragging is paused."
+    },
+    {
+      "id": "map-pins.017",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:10",
+      "text": "Drag to pan. Click Add mark to annotate."
+    },
+    {
+      "id": "map-pins.018",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:11",
+      "text": "Choose a mark from the list first."
+    },
+    {
+      "id": "map-pins.020",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:11",
+      "text": "Mark updated."
+    },
+    {
+      "id": "map-pins.021",
+      "section": "Map interface",
+      "source": "dist/map-pins.js:12",
+      "text": "Mark saved. Add another, or switch back to dragging."
+    },
+    {
+      "id": "save-codes.002",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:4",
+      "text": "compact-expansion-13"
+    },
+    {
+      "id": "save-codes.003",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:5",
+      "text": "This code is too long."
+    },
+    {
+      "id": "save-codes.004",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:5",
+      "text": "The save code is incomplete or has been changed. Copy the whole code."
+    },
+    {
+      "id": "save-codes.005",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:5",
+      "text": "The save code could not be read."
+    },
+    {
+      "id": "save-codes.007",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:5",
+      "text": "This save belongs to a different island version."
+    },
+    {
+      "id": "save-codes.008",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:5",
+      "text": "The save has no game state."
+    },
+    {
+      "id": "save-codes.009",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:6",
+      "text": "in save."
+    },
+    {
+      "id": "save-codes.010",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:7",
+      "text": "sprint recovery"
+    },
+    {
+      "id": "save-codes.011",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:8",
+      "text": "Missing player position."
+    },
+    {
+      "id": "save-codes.012",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:8",
+      "text": "east position"
+    },
+    {
+      "id": "save-codes.013",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:8",
+      "text": "south position"
+    },
+    {
+      "id": "save-codes.014",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:8",
+      "text": "floor height"
+    },
+    {
+      "id": "save-codes.015",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:8",
+      "text": "view angle"
+    },
+    {
+      "id": "save-codes.016",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:8",
+      "text": "view pitch"
+    },
+    {
+      "id": "save-codes.017",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:8",
+      "text": "Invalid player floor."
+    },
+    {
+      "id": "save-codes.018",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:8",
+      "text": "Saved position is inside a wall or outside the island."
+    },
+    {
+      "id": "save-codes.019",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:9",
+      "text": "Invalid escape inventory."
+    },
+    {
+      "id": "save-codes.020",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:10",
+      "text": "Invalid world items."
+    },
+    {
+      "id": "save-codes.021",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:11",
+      "text": "Invalid backpack."
+    },
+    {
+      "id": "save-codes.022",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:11",
+      "text": "Invalid document archive."
+    },
+    {
+      "id": "save-codes.023",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:11",
+      "text": "Invalid room search history."
+    },
+    {
+      "id": "save-codes.024",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:12",
+      "text": "Invalid room state."
+    },
+    {
+      "id": "save-codes.025",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:12",
+      "text": "door angle"
+    },
+    {
+      "id": "save-codes.026",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:12",
+      "text": "forced door"
+    },
+    {
+      "id": "save-codes.027",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:12",
+      "text": "Invalid room switch."
+    },
+    {
+      "id": "save-codes.028",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:12",
+      "text": "Invalid hiding place."
+    },
+    {
+      "id": "save-codes.029",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:12",
+      "text": "Hiding state does not match position."
+    },
+    {
+      "id": "save-codes.030",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:12",
+      "text": "Invalid tracks."
+    },
+    {
+      "id": "save-codes.031",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:13",
+      "text": "epstein,hawking,trump,diddy"
+    },
+    {
+      "id": "save-codes.032",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:13",
+      "text": "Invalid hunters."
+    },
+    {
+      "id": "save-codes.033",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:13",
+      "text": "hunter position"
+    },
+    {
+      "id": "save-codes.035",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:13",
+      "text": "hunter floor"
+    },
+    {
+      "id": "save-codes.036",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:13",
+      "text": "remembered position"
+    },
+    {
+      "id": "save-codes.038",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:13",
+      "text": "Invalid hunter path."
+    },
+    {
+      "id": "save-codes.039",
+      "section": "Save interface",
+      "source": "dist/save-codes.js:13",
+      "text": "journal count"
+    },
+    {
+      "id": "startup-help.002",
+      "section": "Graphics recovery",
+      "source": "dist/startup-help.js:4",
+      "text": "CANVAS_UNAVAILABLE"
+    },
+    {
+      "id": "startup-help.004",
+      "section": "Graphics recovery",
+      "source": "dist/startup-help.js:6",
+      "text": "BROWSER CANVAS UNAVAILABLE"
+    },
+    {
+      "id": "startup-help.005",
+      "section": "Graphics recovery",
+      "source": "dist/startup-help.js:6",
+      "text": "GAME RENDERING ERROR"
+    },
+    {
+      "id": "startup-help.006",
+      "section": "Graphics recovery",
+      "source": "dist/startup-help.js:7",
+      "text": "The browser refused a basic drawing canvas. Reload the page to try again."
+    },
+    {
+      "id": "startup-help.007",
+      "section": "Graphics recovery",
+      "source": "dist/startup-help.js:7",
+      "text": "The renderer encountered an error. Your game state is preserved while it recovers."
+    },
+    {
+      "id": "startup-help.008",
+      "section": "Graphics recovery",
+      "source": "dist/startup-help.js:9",
+      "text": "Basic 3D works without WebGL. If retrying still fails, copy the technical error below."
+    },
+    {
+      "id": "startup-help.009",
+      "section": "Graphics recovery",
+      "source": "dist/startup-help.js:10",
+      "text": "NO RETURN / BASIC 5"
+    },
+    {
+      "id": "startup-help.010",
+      "section": "Graphics recovery",
+      "source": "dist/startup-help.js:10",
+      "text": "RENDERER_STARTUP"
+    },
+    {
+      "id": "startup-help.012",
+      "section": "Graphics recovery",
+      "source": "dist/startup-help.js:12",
+      "text": "no-return-graphics"
+    },
+    {
+      "id": "startup-help.013",
+      "section": "Graphics recovery",
+      "source": "dist/startup-help.js:13",
+      "text": "ERROR COPIED"
+    },
+    {
+      "id": "startup-help.014",
+      "section": "Graphics recovery",
+      "source": "dist/startup-help.js:13",
+      "text": "Select and copy the technical details below."
+    },
+    {
+      "id": "world.024",
+      "section": "World labels and prompts",
+      "source": "dist/world.js:37",
+      "text": "WEST VILLA"
+    },
+    {
+      "id": "world.026",
+      "section": "World labels and prompts",
+      "source": "dist/world.js:37",
+      "text": "TENNIS COURT"
+    },
+    {
+      "id": "world.027",
+      "section": "World labels and prompts",
+      "source": "dist/world.js:37",
+      "text": "EAST BEACH"
+    },
+    {
+      "id": "world.028",
+      "section": "World labels and prompts",
+      "source": "dist/world.js:48",
+      "text": "roof:shape"
+    },
+    {
+      "id": "world.029",
+      "section": "World labels and prompts",
+      "source": "dist/world.js:66",
+      "text": "tower:type"
+    },
+    {
+      "id": "compact-island.002",
+      "section": "World labels and prompts",
+      "source": "dist/compact-island.js:5",
+      "text": "building:levels"
+    },
+    {
+      "id": "compact-island.004",
+      "section": "World labels and prompts",
+      "source": "dist/compact-island.js:8",
+      "text": "compact-house-"
+    },
+    {
+      "id": "compact-island.005",
+      "section": "World labels and prompts",
+      "source": "dist/compact-island.js:12",
+      "text": "compact-road-"
+    },
+    {
+      "id": "compact-island.006",
+      "section": "World labels and prompts",
+      "source": "dist/compact-island.js:23",
+      "text": "compact-pier"
+    },
+    {
+      "id": "compact-island.007",
+      "section": "World labels and prompts",
+      "source": "dist/compact-island.js:24",
+      "text": "compact-helipad"
+    },
+    {
+      "id": "compact-island.008",
+      "section": "World labels and prompts",
+      "source": "dist/compact-island.js:25",
+      "text": "compact-shelter"
+    },
+    {
+      "id": "compact-island.009",
+      "section": "World labels and prompts",
+      "source": "dist/compact-island.js:27",
+      "text": "Authored fictional compact island"
+    },
+    {
+      "id": "compact-island.010",
+      "section": "World labels and prompts",
+      "source": "dist/compact-island.js:27",
+      "text": "Authored game layout"
+    },
+    {
+      "id": "compact-island.011",
+      "section": "World labels and prompts",
+      "source": "dist/compact-island.js:27",
+      "text": "Local metres; one game unit = one metre"
+    },
+    {
+      "id": "compact-island.012",
+      "section": "World labels and prompts",
+      "source": "dist/compact-island.js:28",
+      "text": "Compact island compound"
+    },
+    {
+      "id": "interface.001",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "NO RETURN — Escape the Island"
+    },
+    {
+      "id": "interface.002",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "SKIP ARRIVAL [ESC]"
+    },
+    {
+      "id": "interface.003",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "AN ISLAND ESCAPE EXPERIENCE"
+    },
+    {
+      "id": "interface.004",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "SOUND OFF"
+    },
+    {
+      "id": "interface.005",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "SOME PLACES DON'T LET YOU LEAVE"
+    },
+    {
+      "id": "interface.006",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "NO"
+    },
+    {
+      "id": "interface.007",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "RETURN"
+    },
+    {
+      "id": "interface.008",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "ESCAPE THE ISLAND"
+    },
+    {
+      "id": "interface.009",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "The beam is your only light."
+    },
+    {
+      "id": "interface.010",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "It is also how he finds you."
+    },
+    {
+      "id": "interface.011",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "Switch it off. Hold your breath."
+    },
+    {
+      "id": "interface.012",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "ENTER THE ISLAND"
+    },
+    {
+      "id": "interface.013",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "LOAD SAVE CODE"
+    },
+    {
+      "id": "interface.014",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "EDITABLE FLAVOR TEXT ↓"
+    },
+    {
+      "id": "interface.015",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "JSON ↓"
+    },
+    {
+      "id": "interface.016",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "01 — SURVIVAL HORROR"
+    },
+    {
+      "id": "interface.017",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "HOW TO SURVIVE"
+    },
+    {
+      "id": "interface.018",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "A fictional horror scenario inspired by Epstein's island."
+    },
+    {
+      "id": "interface.019",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "Fictional nightmare encounters and explorer stories. Cameos do not depict real events."
+    },
+    {
+      "id": "interface.020",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "Image credits"
+    },
+    {
+      "id": "interface.021",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": ". Compact fictional island layout."
+    },
+    {
+      "id": "interface.022",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "MAKE YOUR CHOICE"
+    },
+    {
+      "id": "interface.023",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "BEFORE THE SHORE."
+    },
+    {
+      "id": "interface.024",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "All settings. Right here."
+    },
+    {
+      "id": "interface.025",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "RETRY"
+    },
+    {
+      "id": "interface.026",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "COMPATIBILITY MODE"
+    },
+    {
+      "id": "interface.027",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "COPY ERROR"
+    },
+    {
+      "id": "interface.028",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "Technical error details"
+    },
+    {
+      "id": "interface.029",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "COMPATIBILITY MODE · 512px materials · reduced effects"
+    },
+    {
+      "id": "interface.030",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "RESTORE NORMAL GRAPHICS"
+    },
+    {
+      "id": "interface.031",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "BASIC 3D ACTIVE · Textured 3D with reduced detail. No WebGL needed."
+    },
+    {
+      "id": "interface.032",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "GRAPHICS"
+    },
+    {
+      "id": "interface.033",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "LOW"
+    },
+    {
+      "id": "interface.034",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "BALANCED"
+    },
+    {
+      "id": "interface.035",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "HIGH"
+    },
+    {
+      "id": "interface.036",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "ULTRA"
+    },
+    {
+      "id": "interface.037",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "Basic 3D compatibility"
+    },
+    {
+      "id": "interface.038",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "— works without WebGL"
+    },
+    {
+      "id": "interface.039",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "Experimental ray lighting"
+    },
+    {
+      "id": "interface.040",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "— slower; off by default"
+    },
+    {
+      "id": "interface.041",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "High is recommended. Scanned scenery and detailed materials are included in every preset. Ray lighting is optional."
+    },
+    {
+      "id": "interface.042",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "HORROR"
+    },
+    {
+      "id": "interface.043",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "Unscary mode"
+    },
+    {
+      "id": "interface.044",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "— plain hunters, no nightmare visuals"
+    },
+    {
+      "id": "interface.045",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "Pussy mode selected. Fine, we’ll keep it tame."
+    },
+    {
+      "id": "interface.046",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "Jumpscares"
+    },
+    {
+      "id": "interface.047",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "— switch off only sudden scares"
+    },
+    {
+      "id": "interface.048",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "Photographic scare images"
+    },
+    {
+      "id": "interface.049",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "— optional photographic ambushes"
+    },
+    {
+      "id": "interface.050",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "Proximity distortion"
+    },
+    {
+      "id": "interface.051",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "— the world bends as hunters close in"
+    },
+    {
+      "id": "interface.052",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "AUDIO"
+    },
+    {
+      "id": "interface.053",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "Sound enabled"
+    },
+    {
+      "id": "interface.054",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "— footsteps, breathing and ambience"
+    },
+    {
+      "id": "interface.055",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "MASTER VOLUME"
+    },
+    {
+      "id": "interface.056",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "SIGNAL LOST"
+    },
+    {
+      "id": "interface.057",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "LITTLE SAINT JAMES   /   AFTER MIDNIGHT"
+    },
+    {
+      "id": "interface.058",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "PRIVATE"
+    },
+    {
+      "id": "interface.059",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "PROPERTY"
+    },
+    {
+      "id": "interface.060",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "NO TRESPASSING"
+    },
+    {
+      "id": "interface.061",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "YOUR WAY OUT"
+    },
+    {
+      "id": "interface.062",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "●   UNDETECTED"
+    },
+    {
+      "id": "interface.063",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "STAMINA"
+    },
+    {
+      "id": "interface.064",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "SOUTH SHORE"
+    },
+    {
+      "id": "interface.065",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "WASD MOVE   SHIFT RUN   C CROUCH   E INTERACT   Y BAG   J FILES   F LIGHT   M MAP   ESC PAUSE   8 HITBOX   9 DAYLIGHT"
+    },
+    {
+      "id": "interface.066",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "FLASHLIGHT ON"
+    },
+    {
+      "id": "interface.067",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "BAG [Y]"
+    },
+    {
+      "id": "interface.068",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "FILES [J]"
+    },
+    {
+      "id": "interface.069",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "MAP"
+    },
+    {
+      "id": "interface.070",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "LIGHT"
+    },
+    {
+      "id": "interface.071",
+      "section": "Main menu and HUD",
+      "source": "dist/index.html",
+      "text": "PAUSE"
+    }
+  ]
+}
