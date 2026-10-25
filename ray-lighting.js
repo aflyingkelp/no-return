@@ -30,6 +30,6 @@ vec3 tracedLight(vec3 pos,vec3 normal,vec3 albedo,vec3 eye,vec3 light,vec3 direc
   vec2 seed=gl_FragCoord.xy+vec2(float(bounce)*71.2);vec3 ray=cosineRay(n,vec2(hash(vec3(seed,1.3)),hash(vec3(seed.yx,5.7))));vec3 hp,hn,hc;
   if(!intersectScene(origin,ray,18.,hp,hn,hc)){if(day>.5)radiance+=throughput*vec3(.16,.20,.23);break;}
   vec3 toLight=light-hp;float d=length(toLight);vec3 L=toLight/max(d,.001),unusedP,unusedN,unusedC;float visibility=intersectScene(hp+hn*.03,L,max(.02,d-.06),unusedP,unusedN,unusedC)?0.:1.;
-  float cone=smoothstep(.956,.979,dot(-L,direction));vec3 direct=day>.5?hc*.45:hc*max(0.,dot(hn,L))*cone*visibility*16./(1.+d*.45+d*d*.16)*vec3(1.,.91,.76);radiance+=throughput*direct*.45;throughput*=hc*.55;origin=hp+hn*.025;n=hn;
+  float cone=smoothstep(.90,.98,dot(-L,direction));vec3 direct=day>.5?hc*.45:hc*max(0.,dot(hn,L))*cone*visibility*16./(1.+d*.45+d*d*.16)*vec3(1.,.91,.76);radiance+=throughput*direct*.45;throughput*=hc*.55;origin=hp+hn*.025;n=hn;
  }return radiance;
 }`;

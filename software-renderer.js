@@ -36,7 +36,7 @@ window.IslandSoftware=class {
   const width=Math.min(640,Math.round(height*innerWidth/innerHeight));
   if(this.canvas.width===width&&this.canvas.height===height&&this.image)return;
   this.canvas.width=width;this.canvas.height=height;this.image=this.ctx.createImageData(width,height);this.depth=new Float32Array(width*height);this.beam=new Float32Array(width*height);
-  for(let y=0;y<height;y++)for(let x=0;x<width;x++){let d=Math.hypot((x+.5-width/2)/height,(y+.5-height/2)/height),t=clamp((d-.24)/.07,0,1);this.beam[y*width+x]=1-t*t*(3-2*t);}
+  for(let y=0;y<height;y++)for(let x=0;x<width;x++){let d=Math.hypot((x+.5-width/2)/height,(y+.5-height/2)/height),t=clamp((d-.18)/.25,0,1);this.beam[y*width+x]=1-t*t*(3-2*t);}
  }
  loadTextures(){
   if(typeof Image==='undefined')return;
@@ -76,7 +76,7 @@ window.IslandSoftware=class {
   let area=(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);if(Math.abs(area)<.15||outlineBackfaces===true&&area<0)return;if(area<0){[b,c]=[c,b];area=-area;}
   const edge=(p,r,x,y)=>(r[0]-p[0])*(y-p[1])-(r[1]-p[1])*(x-p[0]);
   let x0=Math.max(0,Math.floor(Math.min(a[0],b[0],c[0]))),x1=Math.min(width-1,Math.ceil(Math.max(a[0],b[0],c[0]))),y0=Math.max(0,Math.floor(Math.min(a[1],b[1],c[1]))),y1=Math.min(height-1,Math.ceil(Math.max(a[1],b[1],c[1])));
-  if(!q.day){x0=Math.max(x0,Math.floor(width/2-height*.31));x1=Math.min(x1,Math.ceil(width/2+height*.31));y0=Math.max(y0,Math.floor(height*.19));y1=Math.min(y1,Math.ceil(height*.81));}
+  if(!q.day){x0=Math.max(x0,Math.floor(width/2-height*.43));x1=Math.min(x1,Math.ceil(width/2+height*.43));y0=Math.max(y0,Math.floor(height*.07));y1=Math.min(y1,Math.ceil(height*.93));}
   if(x1<x0||y1<y0)return;
   const invArea=1/area,dx0=-(c[1]-b[1])*invArea,dy0=(c[0]-b[0])*invArea,dx1=-(a[1]-c[1])*invArea,dy1=(a[0]-c[0])*invArea;
   let row0=edge(b,c,x0+.5,y0+.5)*invArea,row1=edge(c,a,x0+.5,y0+.5)*invArea,pixels=this.image.data,depth=this.depth,beam=this.beam;
@@ -95,7 +95,7 @@ window.IslandSoftware=class {
  render(state,force=false){
   if(this.disposed)return;const start=performance.now(),key=[state.menu,state.flashlight,state.daylight,state.hitbox,state.outline?.id,state.outline?.version].join('/');if(!force&&start-this.lastFrame<50&&this.lastKey===key)return;this.lastKey=key;this.lastFrame=start;this.resize();
   const c=state.camera,width=this.canvas.width,height=this.canvas.height,day=state.menu||state.daylight,cp=Math.cos(c.pitch||0),sp=Math.sin(c.pitch||0),ca=Math.cos(c.a),sa=Math.sin(c.a),zoom=height/(2*Math.tan(65*Math.PI/360));
-  const halfX=day?width/(2*zoom):height*.31/zoom,halfY=day?height/(2*zoom):height*.31/zoom;
+  const halfX=day?width/(2*zoom):height*.43/zoom,halfY=day?height/(2*zoom):height*.43/zoom;
   this.view={x:c.x,z:c.y,height:c.height,roll:c.roll||0,ca,sa,cp,sp,zoom,halfX,halfY,reach:day?100:state.candle?9:36,candle:!!state.candle,day,menu:state.menu,time:state.time};
   this.drawTriangles=0;this.visibleChunks=0;this.depth.fill(0);let pixels=this.image.data;
   for(let y=0;y<height;y++){let horizon=y/height,sky=day?(state.menu?.24:1):0,r=sky*(65+35*horizon),g=sky*(90+32*horizon),b=sky*(102+30*horizon);for(let x=0;x<width;x++){let i=(y*width+x)*4;pixels[i]=r;pixels[i+1]=g;pixels[i+2]=b;pixels[i+3]=255;}}
