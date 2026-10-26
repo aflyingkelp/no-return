@@ -68,7 +68,7 @@ window.IslandSoftware=class {
   if(q.menu)shade*=.29;
   const color=[data[at+6],data[at+7],data[at+8]];
   if(highlight){color[0]=color[0]*(1-highlight*.35)+.75*highlight*.35;color[1]=color[1]*(1-highlight*.35)+.62*highlight*.35;}
-  vertices=clipped(vertices);for(let i=1;i<vertices.length-1;i++)this.raster(vertices[0],vertices[i],vertices[i+1],color,model?.outline?null:this.textures[layer],shade,highlight,model?.outline?model.backfaces:null);
+  this.faceNormal=[normalX,ny,normalZ];vertices=clipped(vertices);for(let i=1;i<vertices.length-1;i++)this.raster(vertices[0],vertices[i],vertices[i+1],color,model?.outline?null:this.textures[layer],shade,highlight,model?.outline?model.backfaces:null);
  }
  raster(a,b,c,color,texture,shade,highlight,outlineBackfaces=null){
   const width=this.canvas.width,height=this.canvas.height,q=this.view,zoom=q.zoom;
@@ -76,17 +76,17 @@ window.IslandSoftware=class {
   let area=(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);if(Math.abs(area)<.15||outlineBackfaces===true&&area<0)return;if(area<0){[b,c]=[c,b];area=-area;}
   const edge=(p,r,x,y)=>(r[0]-p[0])*(y-p[1])-(r[1]-p[1])*(x-p[0]);
   let x0=Math.max(0,Math.floor(Math.min(a[0],b[0],c[0]))),x1=Math.min(width-1,Math.ceil(Math.max(a[0],b[0],c[0]))),y0=Math.max(0,Math.floor(Math.min(a[1],b[1],c[1]))),y1=Math.min(height-1,Math.ceil(Math.max(a[1],b[1],c[1])));
-  if(!q.day){x0=Math.max(x0,Math.floor(width/2-height*.43));x1=Math.min(x1,Math.ceil(width/2+height*.43));y0=Math.max(y0,Math.floor(height*.07));y1=Math.min(y1,Math.ceil(height*.93));}
+  if(!q.day&&!q.teamLights.length){x0=Math.max(x0,Math.floor(width/2-height*.43));x1=Math.min(x1,Math.ceil(width/2+height*.43));y0=Math.max(y0,Math.floor(height*.07));y1=Math.min(y1,Math.ceil(height*.93));}
   if(x1<x0||y1<y0)return;
   const invArea=1/area,dx0=-(c[1]-b[1])*invArea,dy0=(c[0]-b[0])*invArea,dx1=-(a[1]-c[1])*invArea,dy1=(a[0]-c[0])*invArea;
   let row0=edge(b,c,x0+.5,y0+.5)*invArea,row1=edge(c,a,x0+.5,y0+.5)*invArea,pixels=this.image.data,depth=this.depth,beam=this.beam;
   this.drawTriangles++;
   for(let y=y0;y<=y1;y++,row0+=dy0,row1+=dy1){let w0=row0,w1=row1;for(let x=x0;x<=x1;x++,w0+=dx0,w1+=dx1){
-   let w2=1-w0-w1;if(w0<-.00001||w1<-.00001||w2<-.00001)continue;let index=y*width+x;if(!q.day&&beam[index]===0)continue;
+   let w2=1-w0-w1;if(w0<-.00001||w1<-.00001||w2<-.00001)continue;let index=y*width+x;if(!q.day&&!q.teamLights.length&&(!q.ownLight||beam[index]===0))continue;
    let inverse=w0*a[2]+w1*b[2]+w2*c[2];if(inverse<=depth[index])continue;let z=1/inverse;if(z>q.reach)continue;if(outlineBackfaces===null)depth[index]=inverse;
-   let r=color[0]*255,g=color[1]*255,blue=color[2]*255;if(outlineBackfaces!==null){const at=index*4,light=q.day?1:beam[index];pixels[at]=r*light;pixels[at+1]=g*light;pixels[at+2]=blue*light;continue;}
+   let sharedLight=0;if(!q.day&&q.teamLights.length){const tile=(Math.floor(y/3)*Math.ceil(width/3)+Math.floor(x/3))*512+Math.floor(z*2);sharedLight=q.lightTiles.get(tile);if(sharedLight===undefined){const rx=(x+.5-width/2)/zoom*z,ry=(height/2-y-.5)/zoom*z,cr=q.cr,sr=q.sr,vx=rx*cr-ry*sr,vy=rx*sr+ry*cr,h=z*q.cp-vy*q.sp;const point=[q.x+h*q.ca-vx*q.sa,q.height+z*q.sp+vy*q.cp,q.z+h*q.sa+vx*q.ca];sharedLight=window.ISLAND_TEAM_LIGHTS.sample(q.teamLights,point,this.faceNormal);q.lightTiles.set(tile,sharedLight);}}let ownLight=q.ownLight&&z<(q.candle?9:36)?Math.min(2.2,12/(1+z*.45+z*z*.16))*beam[index]:0;if(!q.day&&ownLight+sharedLight<=.0001)continue;let r=color[0]*255,g=color[1]*255,blue=color[2]*255;if(outlineBackfaces!==null){const at=index*4,light=q.day?1:beam[index];pixels[at]=r*light;pixels[at+1]=g*light;pixels[at+2]=blue*light;continue;}
    if(texture){let u=(w0*a[3]+w1*b[3]+w2*c[3])*z,v=(w0*a[4]+w1*b[4]+w2*c[4])*z,ti=(((Math.floor(v*256)&255)*256)+(Math.floor(u*256)&255))*4;r=texture[ti]*.88;g=texture[ti+1]*.88;blue=texture[ti+2]*.85;}
-   let light=shade;if(!q.day)light*=Math.min(2.2,12/(1+z*.45+z*z*.16))*beam[index];let at=index*4;
+   let light=q.day?shade:shade*ownLight+sharedLight;let at=index*4;
    if(q.day){let fog=1-Math.exp(-z*.002);pixels[at]=r*light*(1-fog)+100*fog;pixels[at+1]=g*light*(1-fog)+125*fog;pixels[at+2]=blue*light*(1-fog)+130*fog;}
    else{pixels[at]=Math.sqrt(Math.max(0,r*light)/255)*255;pixels[at+1]=Math.sqrt(Math.max(0,g*light*.91)/255)*255;pixels[at+2]=Math.sqrt(Math.max(0,blue*light*.76)/255)*255;if(q.candle){pixels[at]*=.85;pixels[at+1]*=.49;pixels[at+2]*=.20;}}
   }}
@@ -95,11 +95,11 @@ window.IslandSoftware=class {
  render(state,force=false){
   if(this.disposed)return;const start=performance.now(),key=[state.menu,state.flashlight,state.daylight,state.hitbox,state.outline?.id,state.outline?.version].join('/');if(!force&&start-this.lastFrame<50&&this.lastKey===key)return;this.lastKey=key;this.lastFrame=start;this.resize();
   const c=state.camera,width=this.canvas.width,height=this.canvas.height,day=state.menu||state.daylight,cp=Math.cos(c.pitch||0),sp=Math.sin(c.pitch||0),ca=Math.cos(c.a),sa=Math.sin(c.a),zoom=height/(2*Math.tan(65*Math.PI/360));
-  const halfX=day?width/(2*zoom):height*.43/zoom,halfY=day?height/(2*zoom):height*.43/zoom;
-  this.view={x:c.x,z:c.y,height:c.height,roll:c.roll||0,ca,sa,cp,sp,zoom,halfX,halfY,reach:day?100:state.candle?9:36,candle:!!state.candle,day,menu:state.menu,time:state.time};
+  const teamLights=window.ISLAND_TEAM_LIGHTS.prepare(state.teamLights,c);const shared=teamLights.length>0;const halfX=day||shared?width/(2*zoom):height*.43/zoom,halfY=day||shared?height/(2*zoom):height*.43/zoom;
+  this.view={x:c.x,z:c.y,height:c.height,roll:c.roll||0,ca,sa,cp,sp,zoom,halfX,halfY,reach:day?100:shared?72:state.candle?9:36,ownLight:state.flashlight,teamLights,lightTiles:new Map(),cr:Math.cos(c.roll||0),sr:Math.sin(c.roll||0),candle:!!state.candle,day,menu:state.menu,time:state.time};
   this.drawTriangles=0;this.visibleChunks=0;this.depth.fill(0);let pixels=this.image.data;
   for(let y=0;y<height;y++){let horizon=y/height,sky=day?(state.menu?.24:1):0,r=sky*(65+35*horizon),g=sky*(90+32*horizon),b=sky*(102+30*horizon);for(let x=0;x<width;x++){let i=(y*width+x)*4;pixels[i]=r;pixels[i+1]=g;pixels[i+2]=b;pixels[i+3]=255;}}
-  if(state.flashlight||day){
+  if(state.flashlight||day||shared){
    const forward=[ca*cp,sp,sa*cp],r0=[-sa,0,ca],u0=[-ca*sp,cp,-sa*sp],cr=Math.cos(c.roll||0),sr=Math.sin(c.roll||0),right=r0.map((v,i)=>v*cr+u0[i]*sr),up=u0.map((v,i)=>v*cr-r0[i]*sr),planes=[forward];for(let sign of [-1,1]){planes.push(forward.map((v,i)=>v*halfX+right[i]*sign));planes.push(forward.map((v,i)=>v*halfY+up[i]*sign));}
    const visible=cell=>planes.every(n=>n[0]*((n[0]>=0?cell.x1:cell.x0)-c.x)+n[1]*((n[1]>=0?cell.y1:cell.y0)-c.height)+n[2]*((n[2]>=0?cell.z1:cell.z0)-c.y)>=0);
    let reach=this.view.reach,cells=this.chunks.map(cell=>({cell,d:Math.max(cell.x0-c.x,0,c.x-cell.x1)**2+Math.max(cell.z0-c.y,0,c.y-cell.z1)**2})).filter(o=>o.d<=reach*reach&&visible(o.cell)).sort((a,b)=>a.d-b.d);

@@ -15,3 +15,8 @@ The server source is managed separately in a private repository. Co-op rooms liv
 ## Credits
 
 See [image credits](image-credits.html) and the asset attribution files for third-party artwork and textures. The game is a fictional horror scenario; its encounters do not depict real events.
+
+## Co-op options
+
+The host chooses 1–4 hunters in the lobby before everyone readies up. Teammate flashlights illuminate shared scenery and cast shadows even with your own flashlight off. After the 90-second rescue window expires, eliminated survivors spectate their teammates and can switch cameras with Previous / Next. Hunters have a narrower forward field of view and shorter visual detection range; hearing still matters.
+

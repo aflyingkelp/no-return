@@ -2,10 +2,10 @@
 // Perception, remembered clues and bounded navigation shared by every pursuer.
 (() => {
 const profiles={
- epstein:{sight:32,walkHearing:12,runHearing:28,crouchHearing:2.5,speed:4.5,patrolSpeed:2.4,searchSpeed:2.8,grace:30,searchState:'search',searchTime:20,phase:0,closeSoundRush:10},
- hawking:{sight:29,walkHearing:90,runHearing:125,crouchHearing:5,speed:4.05,patrolSpeed:1.95,searchSpeed:3.1,grace:45,searchState:'investigate',searchTime:24,phase:6},
- trump:{sight:32,walkHearing:58,runHearing:100,crouchHearing:5,speed:4.4,patrolSpeed:2.15,searchSpeed:3.3,grace:45,searchState:'investigate',searchTime:22,phase:1},
- diddy:{sight:35,walkHearing:36,runHearing:85,crouchHearing:4,breathHearing:18,speed:4.65,patrolSpeed:2.8,searchSpeed:3.5,grace:75,searchState:'investigate',searchTime:22,phase:5,attackOnSound:true}
+ epstein:{sight:18,walkHearing:12,runHearing:28,crouchHearing:2.5,speed:4.5,patrolSpeed:2.4,searchSpeed:2.8,grace:30,searchState:'search',searchTime:20,phase:0,closeSoundRush:10},
+ hawking:{sight:16,walkHearing:90,runHearing:125,crouchHearing:5,speed:4.05,patrolSpeed:1.95,searchSpeed:3.1,grace:45,searchState:'investigate',searchTime:24,phase:6},
+ trump:{sight:18,walkHearing:58,runHearing:100,crouchHearing:5,speed:4.4,patrolSpeed:2.15,searchSpeed:3.3,grace:45,searchState:'investigate',searchTime:22,phase:1},
+ diddy:{sight:20,walkHearing:36,runHearing:85,crouchHearing:4,breathHearing:18,speed:4.65,patrolSpeed:2.8,searchSpeed:3.5,grace:75,searchState:'investigate',searchTime:22,phase:5,attackOnSound:true}
 };
 const angleDifference=(a,b)=>Math.atan2(Math.sin(a-b),Math.cos(a-b));
 // Eye-height ray against walls, floor slabs and the actual stair opening.
